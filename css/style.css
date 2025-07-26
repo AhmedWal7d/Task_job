@@ -1268,10 +1268,14 @@ a{
           top: 577px !important;
 }
 
-body{
+
+
+}
+
+@media (max-width: 255px) and (max-width: 946px){
+  body{
   color: red !important;
   background-color: red !important;
 }
 
 }
-
