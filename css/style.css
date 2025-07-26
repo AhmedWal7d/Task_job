@@ -1254,7 +1254,7 @@ a{
   }
 }
 
-@media (max-width: 341px) and (max-height: 750px) {
+@media (max-width: 402px) and (max-height: 950px) {
 
 
   .steps-section {
@@ -1265,7 +1265,12 @@ a{
 }
 
 .carousel-control-next, .carousel-control-prev{
-          top: 555px !important;
+          top: 577px !important;
+}
+
+body{
+  color: red !important;
+  background-color: red !important;
 }
 
 }
