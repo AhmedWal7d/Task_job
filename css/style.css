@@ -1272,10 +1272,17 @@ a{
 
 }
 
-@media (max-width: 255px) and (max-width: 946px){
-  body{
-  color: red !important;
-  background-color: red !important;
-}
+@media (max-width: 414px) and (max-width: 896px){
 
+
+
+.steps-section{
+  margin-top:0 !important;
+}
+    .carousel-control-next, .carousel-control-prev {
+    top: 554px !important;
+    }
+    .responsev_margin{
+      margin-top:130px;
+    }
 }
