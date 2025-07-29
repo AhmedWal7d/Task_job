@@ -79,7 +79,7 @@ body {
 .bg_pop_bootstrap{
   background-color: #EEF1F5 !important;
   width: 400px;
-  height: 44px;
+  height: 46px;
   border-radius: 5px;
 }
 
@@ -780,6 +780,20 @@ background-color: #EEF1F5;
 .active_navbar {
   position: relative;
 }
+
+
+  .tab-pane {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .tab-pane.show.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
 
 .active_navbar::after {
   content: "";
