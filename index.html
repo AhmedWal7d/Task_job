@@ -1800,12 +1800,12 @@
       <!-- Header -->
       <div class="p-3 border-0 ">
         <ul class="nav nav-tabs w-100 d-flex justify-content-between" id="myTab" role="tablist">
-<div class="d-flex mt-3">
+<div class="d-flex mt-3 bg_pop_bootstrap mt-4">
   <li class="nav-item tabs_pup" role="presentation">
-    <button class="nav-link nav-linkk active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">تسجيل دخول</button>
+    <button class="nav-link nav-linkk active font-13" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">تسجيل دخول</button>
   </li>
   <li class="nav-item tabs_pup" role="presentation">
-    <button class="nav-link nav-linkk" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">إنشاء حساب</button>
+    <button class="nav-link nav-linkk font-13" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">إنشاء حساب</button>
   </li>
 </div>
 
@@ -1815,52 +1815,49 @@
 </ul>
 <div class="tab-content " id="myTabContent">
   <div class="tab-pane fade show active mt-2" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <!-- رقم الهاتف -->
-    <div class="mb-3 position-relative ">
-  <label class="form-label text_color_input">رقم الهاتف</label>
-  <div class="input-group ">
-    <!-- Dropdown for countries -->
-    <button class="btn btn-outline-secondary input_hover_pop mx-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://flagcdn.com/16x12/sa.png" alt="SA" id="selected-flag" />
-      &nbsp;<span id="selected-code">+966</span>
-    </button>
-<ul class="dropdown-menu pup_input_city">
-  <li>
-    <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="sa" data-code="+966">
-      <span class="d-flex align-items-center">
-        <img src="https://flagcdn.com/16x12/sa.png" alt="SA" class="me-1" />
-        <p class="pt-2 mx-2 mt-1">السعودية</p>
-        
-      </span>
-      <span>+966</span>
-    </a>
-  </li>
-  <li>
-    <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="eg" data-code="+20">
-      <span class="d-flex align-items-center">
-        <img src="https://flagcdn.com/16x12/eg.png" alt="EG" class="me-1" />
-        <p class="pt-2 mx-2 mt-1">مصر</p>
-        
-      </span>
-      <span>+20</span>
-    </a>
-  </li>
-  <li>
-    <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="ae" data-code="+971">
-      <span class="d-flex align-items-center">
-        <img src="https://flagcdn.com/16x12/ae.png" alt="AE" class="me-1" />
-        <p class="pt-2 mx-2 mt-1">الإمارات</p>
-      </span>
-      <span>+971</span>
-    </a>
-  </li>
-  
-</ul>
+           <!-- رقم الهاتف -->
+            <div class="mb-3 position-relative ">
+          <label class="form-label text_color_input">رقم الهاتف</label>
+          <div class="input-group ">
+            <!-- Dropdown for countries -->
+            <button class="btn btn-outline-secondary input_hover_pop mx-2 dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://flagcdn.com/16x12/sa.png" alt="SA" id="selected-flag" />
+              &nbsp;<span id="selected-code">+966</span>
+            </button>
+        <ul class="dropdown-menu pup_input_city">
+          
+          
+          <li>
+         <input type="email" class="form-control pe-5 w-85 mx-auto" placeholder="  ابحث هنا">
+                 <div class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
+              <img class="image_email_pup1" src="image/search-normal.png" alt="">
+            </div>
+          </li>
+          <li>
+            <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="eg" data-code="+20">
+              <span class="d-flex align-items-center">
+                <img src="https://flagcdn.com/16x12/eg.png" alt="EG" class="me-1" />
+                <p class="pt-2 mx-2 mt-1">مصر</p>
+                
+              </span>
+              <span>+20</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="ae" data-code="+971">
+              <span class="d-flex align-items-center">
+                <img src="https://flagcdn.com/16x12/ae.png" alt="AE" class="me-1" />
+                <p class="pt-2 mx-2 mt-1">الإمارات</p>
+              </span>
+              <span>+971</span>
+            </a>
+          </li>
+        </ul>
 
 
-    <input type="text" class="form-control text-end" placeholder="مثال 5xxxxxxx">
-  </div>
-</div>
+            <input type="text" class="form-control text-end" placeholder="مثال 5xxxxxxx">
+          </div>
+        </div>
       <!-- زر الاستمرار -->
           <div class="d-grid mt-4 mb-4">
             <button type="submit" class="btn btn-dark py-2">استمرار</button>
@@ -1873,7 +1870,7 @@
           <div class="mb-3 position-relative">
             <label class="form-label text_color_input">الاسم الكامل</label>
             <input type="text" class="form-control pe-5" placeholder="ادخل الاسم">
-            <div class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-3 pt-4 mt-1 text-muted">
+            <div class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-3 pt-4 mt-2 text-muted">
               <img src="image/Profile Iconnavbar.png" alt="">
             </div>
           </div>
@@ -1888,15 +1885,13 @@
               &nbsp;<span id="selected-code">+966</span>
             </button>
         <ul class="dropdown-menu pup_input_city">
+          
+          
           <li>
-            <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="sa" data-code="+966">
-              <span class="d-flex align-items-center">
-                <img src="https://flagcdn.com/16x12/sa.png" alt="SA" class="me-1" />
-                <p class="pt-2 mx-2 mt-1">السعودية</p>
-                
-              </span>
-              <span>+966</span>
-            </a>
+         <input type="email" class="form-control pe-5 w-85 mx-auto" placeholder="  ابحث هنا">
+                 <div class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
+              <img class="image_email_pup1" src="image/search-normal.png" alt="">
+            </div>
           </li>
           <li>
             <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#" data-flag="eg" data-code="+20">
@@ -1929,7 +1924,7 @@
           <div class="mb-3 position-relative">
             <label class="form-label text_color_input">البريد الإلكتروني (اختياري)</label>
             <input type="email" class="form-control pe-5" placeholder="ادخل البريد الإلكتروني">
-                 <div class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-2 pt-4 mt-1 text-muted">
+                 <div class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
               <img class="image_email_pup" src="image/email_icone_pop.png" alt="">
             </div>
           </div>

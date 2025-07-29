@@ -55,12 +55,17 @@ body {
   height: 100vh;
   position: relative;
 }
+.top-5{
+    top: 2% !important;
+    right: 30px !important;}
 
 .carousel-item img {
   object-fit: cover;
   height: 100vh;
 }
-
+.w-85{
+  width: 85%;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -71,7 +76,12 @@ body {
   background-color: #1c2132 !important;
   z-index: 5;
 }
-
+.bg_pop_bootstrap{
+  background-color: #EEF1F5 !important;
+  width: 400px;
+  height: 44px;
+  border-radius: 5px;
+}
 
 .carousel-caption {
   position: absolute;
@@ -564,6 +574,9 @@ background-color: #EEF1F5;
 .image_email_pup {
   width: 40px;
 }
+.image_email_pup1 {
+  width: 23px;
+}
 .progressbar {
   width: 247.9994354248047px !important;
   height: 8px !important;
@@ -901,9 +914,16 @@ nav::before {
   width: 180px !important;
   height: 36px !important;
 }
+.tabs_pup{
+  padding: 5px;
+}
+.nav-tabs{
+  border: 0 !important;
+}
 .tabs_pup .active {
-  background-color: #ccccccb5 !important;
+  background-color: #FFFFFF !important;
   font-weight: bold !important;
+  width: 180px;
 }
 .tabs_pup button {
   color: black !important;
