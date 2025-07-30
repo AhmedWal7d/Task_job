@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+  <button class="scroll-to-top" id="scrollBtn" onclick="scrollToTop()">⬆ </button>
+
+
     <!-- Navbar -->
 
 <!-- Navbar -->
@@ -1719,6 +1723,7 @@
     </section>
 
 
+
   <!-- Footer -->
   <footer class="footer text-center text-md-start mt-5">
     <div class="container">
@@ -1806,6 +1811,29 @@
     console.log("Owl Carousel Initialized");
   });
 </script>
+
+ <script>
+    const scrollBtn = document.getElementById("scrollBtn");
+
+    // إظهار الزر عند التمرير لأسفل
+    window.onscroll = function () {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    // التمرير لأعلى عند الضغط
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+  
 
     <script src="js/bootstrap.bundle.min.js "></script>
 
