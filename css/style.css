@@ -1572,7 +1572,7 @@ a {
     justify-content: start !important;
   }
   .owl-theme .owl-dots {
-    bottom: 35px;
+    bottom: 0;
   }
   .carousel-control-next,
   .carousel-control-prev {
