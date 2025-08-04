@@ -1,0 +1,485 @@
+/* ===== HEADER COMPONENT ===== */
+
+/* Navbar Styles */
+nav.navbar {
+  z-index: var(--z-fixed);
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.navbar-brand img {
+  height: 36px;
+  max-height: 50px;
+}
+
+/* Navbar background when collapsed */
+.navbar.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Active navbar item */
+.active_navbar {
+  position: relative;
+}
+
+.active_navbar::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--surface-white);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Navbar bottom line */
+nav > div {
+  position: relative;
+}
+
+nav > div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background-color: var(--surface-white);
+}
+
+/* Navbar items */
+.item_navbar {
+  color: #FFFFFFCC !important;
+}
+
+/* Profile user */
+.profileuser {
+  cursor: pointer;
+}
+
+/* Language change icons */
+.image_navbar_langge {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+/* Language dropdown */
+.h_langage_change {
+  height: 113px !important;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--secondary) !important;
+}
+
+.dropdown-menu.show {
+  height: 170px !important;
+}
+
+.dropdown-toggle::after {
+  color: white;
+}
+
+.language_change img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Navbar buttons */
+.btn-navbar {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.border_input_navbar {
+  border: 2px solid var(--surface-check-radio) !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  position: relative !important;
+}
+
+.border_input_navbar:checked {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background-image: none !important;
+}
+
+.border_input_navbar:checked::after {
+  content: '✓' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.border_input_navbar:focus {
+  outline: none !important;
+}
+
+/* ===== LANGUAGE DROPDOWN FIXES ===== */
+/* Fix dropdown positioning */
+.dropdown-menu.h_langage_change {
+  position: absolute !important;
+  right: -50% !important;
+  left: auto !important;
+  top: 150% !important;
+  margin-top: 0.5rem !important;
+  min-width: 200px !important;
+}
+
+/* Hide default dropdown arrow */
+#languageDropdown::after {
+  display: none !important;
+}
+
+/* Language selection styling */
+.language-option {
+  cursor: pointer;
+}
+
+/* Checkbox styling for language selection */
+.language-option input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+  border: 2px solid var(--surface-check-radio) !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  position: relative !important;
+}
+
+.language-option input[type="checkbox"]:checked {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background-image: none !important;
+}
+
+.language-option input[type="checkbox"]:checked::after {
+  content: '✓' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+/* Ensure only one language can be selected */
+.language-option input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+/* Dropdown item styling */
+.dropdown-item.language-option {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+}
+
+/* Remove all hover effects from language dropdown */
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Remove Bootstrap default dropdown hover effects */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: transparent !important;
+}
+
+/* Ensure no color changes on interaction */
+.language-option:hover,
+.language-option:focus,
+.language-option:active {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Remove any transition effects */
+.dropdown-item,
+.language-option,
+.border_input_navbar {
+  transition: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: var(--radius-lg);
+  }
+
+  .navbar-nav .nav-link {
+    color: var(--surface-white) !important;
+  }
+
+  .navbar .d-flex img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    z-index: 1055;
+  }
+
+  .offcanvas-body a.nav-link {
+    color: var(--text-heading);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .btn-help {
+    background-color: var(--primary);
+    color: white;
+    border-radius: var(--radius);
+  }
+
+  .language-option img {
+    width: 20px;
+    height: auto;
+  }
+
+  .offcanvas-body hr {
+    margin: 1.5rem 0;
+  }
+
+  .btn-custom-outline {
+    border: 1px solid white;
+    color: white;
+    border-radius: var(--radius);
+    padding: 5px 15px;
+    background: transparent;
+  }
+
+  .btn_navbar_order_help {
+    margin-top: 20px !important;
+  }
+
+  .dropdown-menu.h_langage_change {
+    position: fixed !important;
+    right: 1rem !important;
+    left: 1rem !important;
+    top: auto !important;
+    bottom: 1rem !important;
+    margin: 0 !important;
+  }
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .dropdown-menu.h_langage_change {
+    position: fixed !important;
+    right: 1rem !important;
+    left: 1rem !important;
+    top: auto !important;
+    bottom: 1rem !important;
+    margin: 0 !important;
+  }
+  
+  /* Ensure dropdown appears above other elements on mobile */
+  .dropdown-menu.h_langage_change.show {
+    z-index: 9999 !important;
+  }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .dropdown-menu.h_langage_change {
+    right: 0.5rem !important;
+    left: 0.5rem !important;
+    bottom: 0.5rem !important;
+  }
+} 
+
+/* Remove all default browser checkmarks and ensure clean appearance */
+.border_input_navbar,
+.language-option input[type="checkbox"] {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: auto !important;
+}
+
+/* Ensure no duplicate checkmarks */
+.border_input_navbar:checked,
+.language-option input[type="checkbox"]:checked {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: auto !important;
+}
+
+/* Remove any default browser styling */
+.border_input_navbar::-ms-check,
+.language-option input[type="checkbox"]::-ms-check {
+  display: none !important;
+} 
+
+/* Remove any additional dots or marks */
+.border_input_navbar::before,
+.language-option input[type="checkbox"]::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Ensure only our custom checkmark appears */
+.border_input_navbar:checked::before,
+.language-option input[type="checkbox"]:checked::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove any list-style dots */
+.dropdown-item {
+  list-style: none !important;
+}
+
+.dropdown-item::before,
+.dropdown-item::after {
+  content: none !important;
+} 
+
+/* Checkbox styling for selected state */
+.border_input_navbar:checked {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.border_input_navbar:checked::after {
+  content: '✓' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+/* Checkbox styling for unchecked state */
+.border_input_navbar:not(:checked) {
+  background-color: transparent !important;
+  border-color: var(--surface-check-radio) !important;
+}
+
+.border_input_navbar:not(:checked)::after {
+  content: none !important;
+} 
+
+/* Language dropdown text styling */
+.dropdown-menu .image_navbar_langge span {
+  transition: none !important;
+  font-weight: normal !important;
+}
+
+/* Ensure text changes are immediate */
+[data-translate] {
+  transition: none !important;
+}
+
+/* Language dropdown specific styling */
+.h_langage_change .dropdown-item span {
+  color: var(--text-caption) !important;
+} 
+
+/* Ensure checkboxes work properly with dynamic state changes */
+.border_input_navbar,
+.language-option input[type="checkbox"] {
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Force checkbox state updates */
+.border_input_navbar:checked,
+.language-option input[type="checkbox"]:checked {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+  background-image: none !important;
+}
+
+.border_input_navbar:not(:checked),
+.language-option input[type="checkbox"]:not(:checked) {
+  background-color: transparent !important;
+  border-color: var(--surface-check-radio) !important;
+  background-image: none !important;
+} 
+
+/* Make entire dropdown item clickable */
+.dropdown-item {
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+/* Ensure dropdown item covers the full area */
+.dropdown-item .d-flex {
+  width: 100% !important;
+  pointer-events: none !important;
+}
+
+/* Make the checkbox area clickable */
+.dropdown-item input[type="checkbox"] {
+  pointer-events: auto !important;
+}
+
+/* Hover effect for better UX */
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Ensure proper spacing */
+.dropdown-item .d-flex.justify-content-between {
+  padding: 0.5rem 0 !important;
+} 
+
+/* Make offcanvas language options clickable */
+.language-option {
+  cursor: pointer !important;
+  user-select: none !important;
+  padding: 0.5rem !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.language-option:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Ensure proper spacing in offcanvas */
+.language-option .d-flex {
+  width: 100% !important;
+  pointer-events: none !important;
+}
+
+.language-option input[type="checkbox"] {
+  pointer-events: auto !important;
+} 

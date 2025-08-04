@@ -1,0 +1,282 @@
+/* SOFA Experience - Color System */
+
+:root {
+  /* ===== TEXT COLORS ===== */
+  --text-heading: #091013;
+  --text-subheading: #314050;
+  --text-body: #64768e;
+  --text-caption: #768495;
+
+  /* ===== SURFACE COLORS ===== */
+  --surface-border: #e7e7e7;
+  --surface-line: #e8e8e8;
+  --surface-dropbox: #fcfcfc;
+  --surface-white: #ffffff;
+  --surface-bg: #ffffff;
+  --surface-check-radio: #cecece;
+
+  /* ===== PRIMARY COLORS ===== */
+  --primary: #08203e;
+  --primary-50: #eef1f6;
+  --primary-100: #e4e8ee;
+  --primary-200: #dae2ee;
+  --primary-300: #c5e7e0;
+  --primary-400: #7290be;
+  --primary-pressed: #012d5a;
+  --primary-hover: #2e3c6a;
+  --primary-disabled: #e1e1e1;
+
+  /* ===== SECONDARY COLORS ===== */
+  --secondary: #AD996F;
+  --secondary-50: #fefef9;
+  --secondary-100: #f7f6f2;
+  --secondary-200: #f2f0e7;
+  --secondary-300: #dbd0c1;
+  --secondary-400: #c1e1a7;
+  --secondary-pressed: #9d6c51;
+  --secondary-hover: #a88247;
+  --secondary-disabled: #d8d8d8;
+  --secondary-bg-2: #5f6b7e;
+  --secondary-bg-8: #38414c;
+
+  /* ===== SYSTEM COLORS ===== */
+  /* Green */
+  --system-green: #52b228;
+  --system-green-stroke: #dcebde;
+  --system-green-bg: #ecf2e7;
+
+  /* Red */
+  --system-red: #d4342c;
+  --system-red-pressed: #c5201f;
+  --system-red-pressed-2: #e8201f;
+  --system-red-hover: #e3202c;
+  --system-red-focused: #a3202c;
+  --system-red-disabled: #f7b2a0;
+  --system-red-stroke: #abcbcc;
+  --system-red-bg: #fbf2f2;
+  --system-red-disabled-bg: #f9d0d0;
+
+  /* Yellow */
+  --system-yellow: #c1b471;
+  --system-yellow-stroke: #d0b96e;
+  --system-yellow-bg: #fff4e0;
+
+  /* Blue */
+  --system-blue: #277aed;
+  --system-blue-stroke: #c0e3e2;
+  --system-blue-bg: #e1f4f4;
+
+  /* ===== INPUT COLORS ===== */
+  --input-text: #2a374d;
+  --input-placeholder: #768495;
+  --input-border: #ffffff;
+  --input-bg: #fefefe;
+  --input-icon: #66748e;
+  --input-disabled-text: #cecece;
+
+  /* ===== SEMANTIC COLORS ===== */
+  --success: var(--system-green);
+  --success-light: var(--system-green-bg);
+  --success-border: var(--system-green-stroke);
+
+  --danger: var(--system-red);
+  --danger-light: var(--system-red-bg);
+  --danger-border: var(--system-red-stroke);
+
+  --warning: var(--system-yellow);
+  --warning-light: var(--system-yellow-bg);
+  --warning-border: var(--system-yellow-stroke);
+
+  --info: var(--system-blue);
+  --info-light: var(--system-blue-bg);
+  --info-border: var(--system-blue-stroke);
+
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* ===== SPACING ===== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* ===== Z-INDEX ===== */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-heading: #ffffff;
+    --text-subheading: #e2e8f0;
+    --text-body: #cbd5e1;
+    --text-caption: #94a3b8;
+
+    --surface-border: #334155;
+    --surface-line: #475569;
+    --surface-dropbox: #1e293b;
+    --surface-white: #0f172a;
+    --surface-bg: #0f172a;
+    --surface-check-radio: #475569;
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+/* Text Colors */
+.text-heading {
+  color: var(--text-heading) !important;
+}
+
+.text-subheading {
+  color: var(--text-subheading) !important;
+}
+
+.text-body {
+  color: var(--text-body) !important;
+}
+
+.text-caption {
+  color: var(--text-caption) !important;
+}
+
+/* Background Colors */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-50) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-secondary-light {
+  background-color: var(--secondary-50) !important;
+}
+
+/* Border Colors */
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--secondary) !important;
+}
+
+.border-surface {
+  border-color: var(--surface-border) !important;
+}
+
+/* Success Colors */
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-success-light {
+  background-color: var(--success-light) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.border-success {
+  border-color: var(--success) !important;
+}
+
+/* Danger Colors */
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.bg-danger-light {
+  background-color: var(--danger-light) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.border-danger {
+  border-color: var(--danger) !important;
+}
+
+/* Warning Colors */
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.bg-warning-light {
+  background-color: var(--warning-light) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.border-warning {
+  border-color: var(--warning) !important;
+}
+
+/* Info Colors */
+.bg-info {
+  background-color: var(--info) !important;
+}
+
+.bg-info-light {
+  background-color: var(--info-light) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+.border-info {
+  border-color: var(--info) !important;
+}

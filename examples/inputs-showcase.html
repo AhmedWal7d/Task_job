@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض حقول الإدخال - SOFA Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/inputs.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <style>
+        .input-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-normal-box);
+            background-color: var(--surface-white);
+        }
+        
+        .input-section h3 {
+            color: var(--text-heading);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .input-demo {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-small-box);
+            background-color: var(--surface-dropbox);
+        }
+        
+        .input-demo .input-preview {
+            margin-bottom: 0.5rem;
+            background-color: var(--primary-50);
+            border: 2px dashed var(--primary);
+            padding: 1rem;
+            border-radius: var(--radius-small-box-2);
+        }
+        
+        .input-demo .input-details {
+            font-size: var(--font-size-sm);
+            color: var(--text-caption);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .input-states {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--gap-md);
+            margin: 1rem 0;
+        }
+        
+        .input-state {
+            padding: var(--padding-box-small-2);
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-small-box-2);
+            background-color: var(--surface-white);
+        }
+        
+        .input-state h4 {
+            font-size: var(--font-size-sm);
+            color: var(--text-caption);
+            margin-bottom: var(--gap-sm-3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .phone-input-demo {
+            display: flex;
+            align-items: center;
+            gap: var(--gap-sm-5);
+        }
+        
+        .country-select {
+            display: flex;
+            align-items: center;
+            gap: var(--gap-sm-5);
+            padding: var(--padding-box-small-3);
+            border: 1px solid var(--input-border);
+            border-radius: var(--radius-small-box-2);
+            background-color: var(--input-bg);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+        
+        .country-select:hover {
+            border-color: var(--primary);
+        }
+        
+        .flag {
+            width: 20px;
+            height: 15px;
+            background: linear-gradient(45deg, #006c35 50%, #fff 50%);
+            border-radius: 2px;
+            position: relative;
+        }
+        
+        .flag::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 50%, #ce1126 50%);
+        }
+        
+        .numeric-input-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: var(--gap-sm-3);
+            margin: 1rem 0;
+        }
+        
+        .numeric-box {
+            aspect-ratio: 1;
+            border: 2px solid var(--input-border);
+            border-radius: var(--radius-small-box);
+            background-color: var(--surface-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            color: var(--text-heading);
+            transition: all var(--transition-normal);
+        }
+        
+        .numeric-box:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(6, 48, 108, 0.1);
+        }
+        
+        .numeric-box.error {
+            border-color: var(--danger);
+            background-color: var(--danger-light);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5 heading-h1">عرض حقول الإدخال - SOFA Experience</h1>
+                
+                <!-- Text Input States -->
+                <div class="input-section">
+                    <h3>حقول النص - حالات مختلفة</h3>
+                    
+                    <div class="input-states">
+                        <!-- Default State -->
+                        <div class="input-state">
+                            <h4>افتراضي</h4>
+                            <div class="form-group">
+                                <label class="form-label">عنوان الحقل</label>
+                                <input type="text" class="form-control input-search" placeholder="حقل الادخال">
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Active/Focused State -->
+                        <div class="input-state">
+                            <h4>نشط/مُركز</h4>
+                            <div class="form-group">
+                                <label class="form-label">عنوان الحقل</label>
+                                <input type="text" class="form-control input-search input-active" placeholder="حقل الادخال" autofocus>
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Filled State -->
+                        <div class="input-state">
+                            <h4>مُملأ</h4>
+                            <div class="form-group">
+                                <label class="form-label">عنوان الحقل</label>
+                                <input type="text" class="form-control input-search input-filled" value="نص مُدخل" placeholder="حقل الادخال">
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Error State -->
+                        <div class="input-state">
+                            <h4>خطأ</h4>
+                            <div class="form-group">
+                                <label class="form-label">عنوان الحقل</label>
+                                <input type="text" class="form-control input-search input-error" value="نص خاطئ" placeholder="حقل الادخال">
+                                <div class="form-hint form-hint-error">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Disabled State -->
+                        <div class="input-state">
+                            <h4>معطل</h4>
+                            <div class="form-group">
+                                <label class="form-label">عنوان الحقل</label>
+                                <input type="text" class="form-control input-search" placeholder="حقل الادخال" disabled>
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Input States -->
+                <div class="input-section">
+                    <h3>حقول رقم الهاتف - حالات مختلفة</h3>
+                    
+                    <div class="input-states">
+                        <!-- Default State -->
+                        <div class="input-state">
+                            <h4>افتراضي</h4>
+                            <div class="form-group">
+                                <label class="form-label">رقم الهاتف</label>
+                                <div class="phone-input-demo">
+                                    <div class="country-select">
+                                        <div class="flag"></div>
+                                        <span class="code">+965</span>
+                                    </div>
+                                    <input type="tel" class="form-control phone-number" placeholder="مثال xxxxxxxx5">
+                                </div>
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Active/Focused State -->
+                        <div class="input-state">
+                            <h4>نشط/مُركز</h4>
+                            <div class="form-group">
+                                <label class="form-label">رقم الهاتف</label>
+                                <div class="phone-input-demo">
+                                    <div class="country-select">
+                                        <div class="flag"></div>
+                                        <span class="code">+965</span>
+                                    </div>
+                                    <input type="tel" class="form-control phone-number input-active" placeholder="مثال xxxxxxxx5" autofocus>
+                                </div>
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Filled State -->
+                        <div class="input-state">
+                            <h4>مُملأ</h4>
+                            <div class="form-group">
+                                <label class="form-label">رقم الهاتف</label>
+                                <div class="phone-input-demo">
+                                    <div class="country-select">
+                                        <div class="flag"></div>
+                                        <span class="code">+965</span>
+                                    </div>
+                                    <input type="tel" class="form-control phone-number input-filled" value="543765554" placeholder="مثال xxxxxxxx5">
+                                </div>
+                                <div class="form-hint">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Error State -->
+                        <div class="input-state">
+                            <h4>خطأ</h4>
+                            <div class="form-group">
+                                <label class="form-label">رقم الهاتف</label>
+                                <div class="phone-input-demo">
+                                    <div class="country-select" style="border-color: var(--danger);">
+                                        <div class="flag"></div>
+                                        <span class="code">+965</span>
+                                    </div>
+                                    <input type="tel" class="form-control phone-number input-error" value="543765554" placeholder="مثال xxxxxxxx5">
+                                </div>
+                                <div class="form-hint form-hint-error">هذا نص تلميح لمساعدة المستخدم.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numeric Input States -->
+                <div class="input-section">
+                    <h3>الحقول الرقمية - حالات مختلفة</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="numeric-input-demo">
+                                <div class="numeric-box" tabindex="0"></div>
+                                <div class="numeric-box" tabindex="0">0</div>
+                                <div class="numeric-box error" tabindex="0">0</div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Classes: .numeric-box | Border: 2px | Border Radius: 16px | Height: 60px<br>
+                            States: Empty | Filled | Error
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Sizes -->
+                <div class="input-section">
+                    <h3>أحجام حقول الإدخال</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="form-group">
+                                <label class="form-label">حقل صغير</label>
+                                <input type="text" class="form-control input-sm" placeholder="حقل صغير">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">حقل عادي</label>
+                                <input type="text" class="form-control" placeholder="حقل عادي">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">حقل كبير</label>
+                                <input type="text" class="form-control input-lg" placeholder="حقل كبير">
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Classes: .input-sm (36px) | Default (40px) | .input-lg (44px)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input Types -->
+                <div class="input-section">
+                    <h3>أنواع حقول الإدخال</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل نص عادي</label>
+                                        <input type="text" class="form-control" placeholder="أدخل النص هنا">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل البحث</label>
+                                        <input type="search" class="form-control input-search" placeholder="ابحث هنا...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" placeholder="example@email.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل كلمة المرور</label>
+                                        <input type="password" class="form-control" placeholder="أدخل كلمة المرور">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">قائمة منسدلة</label>
+                                        <select class="form-select">
+                                            <option>اختر خياراً</option>
+                                            <option>الخيار الأول</option>
+                                            <option>الخيار الثاني</option>
+                                            <option>الخيار الثالث</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل رقم</label>
+                                        <input type="number" class="form-control" placeholder="أدخل رقماً">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">حقل نص طويل</label>
+                                <textarea class="form-control form-textarea" placeholder="أدخل نصاً طويلاً هنا..."></textarea>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Types: text, search, email, password, select, number, textarea
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkbox & Radio -->
+                <div class="input-section">
+                    <h3>صناديق الاختيار وأزرار الراديو</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="sub-heading-3">صناديق الاختيار</h4>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="check1">
+                                        <label class="form-check-label" for="check1">خيار واحد</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="check2" checked>
+                                        <label class="form-check-label" for="check2">خيار محدد</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="check3" disabled>
+                                        <label class="form-check-label" for="check3">خيار معطل</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="sub-heading-3">أزرار الراديو</h4>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radio1" id="radio1">
+                                        <label class="form-check-label" for="radio1">خيار واحد</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radio1" id="radio2" checked>
+                                        <label class="form-check-label" for="radio2">خيار محدد</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="radio1" id="radio3" disabled>
+                                        <label class="form-check-label" for="radio3">خيار معطل</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Classes: .form-check | .form-check-input | .form-check-label
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch -->
+                <div class="input-section">
+                    <h3>مفاتيح التبديل</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="form-switch">
+                                <input type="checkbox" class="form-switch-input" id="switch1">
+                                <label class="form-check-label" for="switch1">مفتاح التبديل</label>
+                            </div>
+                            <div class="form-switch">
+                                <input type="checkbox" class="form-switch-input" id="switch2" checked>
+                                <label class="form-check-label" for="switch2">مفتاح محدد</label>
+                            </div>
+                            <div class="form-switch">
+                                <input type="checkbox" class="form-switch-input" id="switch3" disabled>
+                                <label class="form-check-label" for="switch3">مفتاح معطل</label>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Classes: .form-switch | .form-switch-input | Width: 44px | Height: 24px
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Validation States -->
+                <div class="input-section">
+                    <h3>حالات التحقق</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل صحيح</label>
+                                        <input type="email" class="form-control input-success" value="example@email.com">
+                                        <div class="form-hint form-hint-success">البريد الإلكتروني صحيح</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل خاطئ</label>
+                                        <input type="email" class="form-control input-error" value="invalid-email">
+                                        <div class="form-hint form-hint-error">البريد الإلكتروني غير صحيح</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">حقل تحذير</label>
+                                <input type="text" class="form-control input-warning" value="نص قصير">
+                                <div class="form-hint form-hint-warning">النص قصير جداً</div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            States: .input-success | .input-error | .input-warning
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Required Fields -->
+                <div class="input-section">
+                    <h3>الحقول المطلوبة</h3>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="form-group">
+                                <label class="form-label form-label-required">الاسم الكامل</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم الكامل">
+                                <div class="form-hint">هذا الحقل مطلوب</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label form-label-required">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" placeholder="أدخل البريد الإلكتروني">
+                                <div class="form-hint">هذا الحقل مطلوب</div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Class: .form-label-required | Adds red asterisk (*)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Demo -->
+                <div class="input-section">
+                    <h3>التجاوب</h3>
+                    <p class="body-2">جرب تغيير حجم النافذة لرؤية كيف تتكيف حقول الإدخال مع الشاشات المختلفة.</p>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل متجاوب</label>
+                                        <input type="text" class="form-control" placeholder="حقل متجاوب">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">حقل آخر</label>
+                                        <input type="email" class="form-control" placeholder="حقل آخر">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            Mobile: Height: 40px | Padding: 12px | Font Size: 16px
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Demo -->
+                <div class="input-section">
+                    <h3>تجربة تفاعلية</h3>
+                    <p class="body-2">جرب التفاعل مع الحقول أدناه لرؤية التأثيرات المختلفة.</p>
+                    
+                    <div class="input-demo">
+                        <div class="input-preview">
+                            <div class="form-group">
+                                <label class="form-label">حقل تفاعلي</label>
+                                <input type="text" class="form-control" id="interactive-input" placeholder="اكتب هنا...">
+                                <div class="form-hint" id="interactive-hint">اكتب أي شيء لرؤية التغييرات</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">حقل رقم الهاتف التفاعلي</label>
+                                <div class="phone-input-demo">
+                                    <div class="country-select" id="country-select">
+                                        <div class="flag"></div>
+                                        <span class="code">+965</span>
+                                    </div>
+                                    <input type="tel" class="form-control phone-number" id="phone-input" placeholder="مثال xxxxxxxx5">
+                                </div>
+                                <div class="form-hint" id="phone-hint">أدخل رقم هاتف صحيح</div>
+                            </div>
+                        </div>
+                        <div class="input-details">
+                            جرب الكتابة في الحقول لرؤية التأثيرات التفاعلية
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/language-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/optimizations.js"></script>
+
+    <script>
+        // Initialize language manager
+        const languageManager = new LanguageManager();
+        
+        // Interactive demo functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const interactiveInput = document.getElementById('interactive-input');
+            const interactiveHint = document.getElementById('interactive-hint');
+            const phoneInput = document.getElementById('phone-input');
+            const phoneHint = document.getElementById('phone-hint');
+            const countrySelect = document.getElementById('country-select');
+            
+            // Interactive text input
+            interactiveInput.addEventListener('input', function() {
+                const value = this.value;
+                if (value.length === 0) {
+                    this.className = 'form-control';
+                    interactiveHint.textContent = 'اكتب أي شيء لرؤية التغييرات';
+                    interactiveHint.className = 'form-hint';
+                } else if (value.length < 3) {
+                    this.className = 'form-control input-warning';
+                    interactiveHint.textContent = 'النص قصير جداً';
+                    interactiveHint.className = 'form-hint form-hint-warning';
+                } else if (value.length > 20) {
+                    this.className = 'form-control input-error';
+                    interactiveHint.textContent = 'النص طويل جداً';
+                    interactiveHint.className = 'form-hint form-hint-error';
+                } else {
+                    this.className = 'form-control input-success';
+                    interactiveHint.textContent = 'النص مناسب';
+                    interactiveHint.className = 'form-hint form-hint-success';
+                }
+            });
+            
+            // Interactive phone input
+            phoneInput.addEventListener('input', function() {
+                const value = this.value;
+                const phoneRegex = /^[0-9]{8}$/;
+                
+                if (value.length === 0) {
+                    this.className = 'form-control phone-number';
+                    phoneHint.textContent = 'أدخل رقم هاتف صحيح';
+                    phoneHint.className = 'form-hint';
+                    countrySelect.style.borderColor = 'var(--input-border)';
+                } else if (phoneRegex.test(value)) {
+                    this.className = 'form-control phone-number input-success';
+                    phoneHint.textContent = 'رقم الهاتف صحيح';
+                    phoneHint.className = 'form-hint form-hint-success';
+                    countrySelect.style.borderColor = 'var(--success)';
+                } else {
+                    this.className = 'form-control phone-number input-error';
+                    phoneHint.textContent = 'رقم الهاتف غير صحيح';
+                    phoneHint.className = 'form-hint form-hint-error';
+                    countrySelect.style.borderColor = 'var(--danger)';
+                }
+            });
+            
+            // Country select interaction
+            countrySelect.addEventListener('click', function() {
+                this.style.borderColor = 'var(--primary)';
+                setTimeout(() => {
+                    this.style.borderColor = 'var(--input-border)';
+                }, 200);
+            });
+            
+            // Add hover effects to input demos
+            const inputDemos = document.querySelectorAll('.input-demo');
+            inputDemos.forEach(demo => {
+                demo.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                    this.style.transition = 'transform 0.2s ease';
+                });
+                
+                demo.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

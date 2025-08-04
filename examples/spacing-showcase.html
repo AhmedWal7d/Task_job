@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض Spacing - SOFA Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <style>
+        .spacing-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-normal-box);
+            background-color: var(--surface-white);
+        }
+        
+        .spacing-section h3 {
+            color: var(--text-heading);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .spacing-demo {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-small-box);
+            background-color: var(--surface-dropbox);
+        }
+        
+        .spacing-demo .spacing-preview {
+            margin-bottom: 0.5rem;
+            background-color: var(--primary-50);
+            border: 2px dashed var(--primary);
+            padding: 1rem;
+            border-radius: var(--radius-small-box-2);
+        }
+        
+        .spacing-demo .spacing-details {
+            font-size: var(--font-size-sm);
+            color: var(--text-caption);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .gap-demo {
+            display: flex;
+            align-items: center;
+            gap: var(--gap-demo);
+            background-color: var(--secondary-50);
+            padding: 1rem;
+            border-radius: var(--radius-small-box-2);
+        }
+        
+        .gap-item {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-small-box-3);
+            font-weight: bold;
+        }
+        
+        .padding-demo {
+            background-color: var(--success-light);
+            border: 2px solid var(--success);
+            border-radius: var(--radius-small-box-2);
+            color: var(--text-heading);
+            font-weight: bold;
+        }
+        
+        .radius-demo {
+            background-color: var(--warning-light);
+            border: 2px solid var(--warning);
+            color: var(--text-heading);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+        }
+        
+        .button-demo {
+            display: flex;
+            align-items: center;
+            gap: var(--gap-sm-3);
+            flex-wrap: wrap;
+        }
+        
+        .dimension-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--gap-sm-3);
+            margin: 1rem 0;
+        }
+        
+        .dimension-item {
+            padding: var(--padding-box-small-2);
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-small-box-2);
+            text-align: center;
+            background-color: var(--surface-white);
+        }
+        
+        .dimension-item .value {
+            font-size: var(--font-size-lg);
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .dimension-item .label {
+            font-size: var(--font-size-sm);
+            color: var(--text-caption);
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5 heading-h1">عرض نظام Spacing - SOFA Experience</h1>
+                
+                <!-- Gap System -->
+                <div class="spacing-section">
+                    <h3>نظام المسافات (Gap System)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="gap-demo" style="--gap-demo: var(--gap-5xl-2);">
+                                <div class="gap-item">عنصر 1</div>
+                                <div class="gap-item">عنصر 2</div>
+                                <div class="gap-item">عنصر 3</div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .gap-5xl-2 | Web: 88px | Mobile: 72px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="gap-demo" style="--gap-demo: var(--gap-xl);">
+                                <div class="gap-item">عنصر 1</div>
+                                <div class="gap-item">عنصر 2</div>
+                                <div class="gap-item">عنصر 3</div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .gap-xl | Web: 48px | Mobile: 40px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="gap-demo" style="--gap-demo: var(--gap-md);">
+                                <div class="gap-item">عنصر 1</div>
+                                <div class="gap-item">عنصر 2</div>
+                                <div class="gap-item">عنصر 3</div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .gap-md | Web: 32px | Mobile: 24px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="gap-demo" style="--gap-demo: var(--gap-sm-3);">
+                                <div class="gap-item">عنصر 1</div>
+                                <div class="gap-item">عنصر 2</div>
+                                <div class="gap-item">عنصر 3</div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .gap-sm-3 | Web: 16px | Mobile: 12px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="gap-demo" style="--gap-demo: var(--gap-sm-5);">
+                                <div class="gap-item">عنصر 1</div>
+                                <div class="gap-item">عنصر 2</div>
+                                <div class="gap-item">عنصر 3</div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .gap-sm-5 | Web: 8px | Mobile: 4px</div>
+                    </div>
+                </div>
+
+                <!-- Padding System -->
+                <div class="spacing-section">
+                    <h3>نظام الحشو الداخلي (Padding System)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="padding-demo padding-box-2xl">
+                                حشو داخلي كبير جداً - 56px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .padding-box-2xl | Web: 56px | Mobile: 48px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="padding-demo padding-box-xl">
+                                حشو داخلي كبير - 48px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .padding-box-xl | Web: 48px | Mobile: 40px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="padding-demo padding-box-normal">
+                                حشو داخلي عادي - 32px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .padding-box-normal | Web: 32px | Mobile: 24px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="padding-demo padding-box-small">
+                                حشو داخلي صغير - 24px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .padding-box-small | Web: 24px | Mobile: 20px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="padding-demo padding-box-small-3">
+                                حشو داخلي صغير جداً - 16px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .padding-box-small-3 | Web: 16px | Mobile: 12px</div>
+                    </div>
+                </div>
+
+                <!-- Border Radius System -->
+                <div class="spacing-section">
+                    <h3>نظام الحدود المنحنية (Border Radius System)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="radius-demo radius-dialog">
+                                حدود منحنية للحوار - 40px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .radius-dialog | Web: 40px | Mobile: 32px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="radius-demo radius-big-box">
+                                حدود منحنية للصندوق الكبير - 32px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .radius-big-box | Web: 32px | Mobile: 24px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="radius-demo radius-normal-box">
+                                حدود منحنية عادية - 24px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .radius-normal-box | Web: 24px | Mobile: 16px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="radius-demo radius-small-box">
+                                حدود منحنية صغيرة - 16px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .radius-small-box | Web: 16px | Mobile: 12px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="radius-demo radius-small-box-2">
+                                حدود منحنية صغيرة جداً - 12px
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .radius-small-box-2 | Web: 12px | Mobile: 10px</div>
+                    </div>
+                </div>
+
+                <!-- Button Dimensions -->
+                <div class="spacing-section">
+                    <h3>أبعاد الأزرار (Button Dimensions)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="button-demo">
+                                <button class="btn btn-primary btn-height-xl">زر كبير جداً</button>
+                                <button class="btn btn-secondary btn-height-lg">زر كبير</button>
+                                <button class="btn btn-success btn-height-sm">زر صغير</button>
+                            </div>
+                        </div>
+                        <div class="spacing-details">
+                            Classes: .btn-height-xl (44px) | .btn-height-lg (40px) | .btn-height-sm (36px)<br>
+                            Border Radius: .btn-radius (10px)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frame Dimensions -->
+                <div class="spacing-section">
+                    <h3>أبعاد الإطار (Frame Dimensions)</h3>
+                    
+                    <div class="dimension-grid">
+                        <div class="dimension-item">
+                            <div class="value">1440px</div>
+                            <div class="label">عرض الإطار (Web)</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="value">130px</div>
+                            <div class="label">هوامش الإطار (Web)</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="value">220px</div>
+                            <div class="label">هوامش الإطار الكبيرة (Web)</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="value">393px</div>
+                            <div class="label">عرض الإطار (Mobile)</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="value">18px</div>
+                            <div class="label">هوامش الإطار (Mobile)</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="value">24px</div>
+                            <div class="label">هوامش الإطار الكبيرة (Mobile)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component Spacing -->
+                <div class="spacing-section">
+                    <h3>مسافات المكونات (Component Spacing)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="card-spacing">
+                                <h4 class="sub-heading-2">بطاقة عادية</h4>
+                                <p class="body-2">هذا مثال على البطاقة العادية مع المسافات المحددة.</p>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .card-spacing | Padding: 32px | Border Radius: 24px | Margin Bottom: 32px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="card-spacing-small">
+                                <h4 class="sub-heading-3">بطاقة صغيرة</h4>
+                                <p class="body-3">هذا مثال على البطاقة الصغيرة مع المسافات المحددة.</p>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .card-spacing-small | Padding: 24px | Border Radius: 16px | Margin Bottom: 24px</div>
+                    </div>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="section-spacing">
+                                <h3 class="heading-h4">قسم عادي</h3>
+                                <p class="body-1">هذا مثال على القسم العادي مع المسافات المحددة.</p>
+                            </div>
+                        </div>
+                        <div class="spacing-details">Class: .section-spacing | Padding: 48px 0 | Margin Bottom: 24px</div>
+                    </div>
+                </div>
+
+                <!-- Form Spacing -->
+                <div class="spacing-section">
+                    <h3>مسافات النماذج (Form Spacing)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="form-group-spacing">
+                                <label class="form-label">حقل النص</label>
+                                <input type="text" class="form-control form-control-spacing" placeholder="أدخل النص هنا">
+                            </div>
+                            <div class="form-group-spacing">
+                                <label class="form-label">حقل آخر</label>
+                                <input type="email" class="form-control form-control-spacing" placeholder="أدخل البريد الإلكتروني">
+                            </div>
+                        </div>
+                        <div class="spacing-details">
+                            Form Group: .form-group-spacing | Margin Bottom: 32px<br>
+                            Form Control: .form-control-spacing | Padding: 16px | Border Radius: 12px
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Spacing -->
+                <div class="spacing-section">
+                    <h3>مسافات التنقل (Navigation Spacing)</h3>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <nav class="d-flex">
+                                <div class="nav-item-spacing">
+                                    <a href="#" class="nav-link nav-link-spacing">الرئيسية</a>
+                                </div>
+                                <div class="nav-item-spacing">
+                                    <a href="#" class="nav-link nav-link-spacing">الخدمات</a>
+                                </div>
+                                <div class="nav-item-spacing">
+                                    <a href="#" class="nav-link nav-link-spacing">اتصل بنا</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="spacing-details">
+                            Nav Item: .nav-item-spacing | Margin: 0 16px<br>
+                            Nav Link: .nav-link-spacing | Padding: 16px 20px
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Demo -->
+                <div class="spacing-section">
+                    <h3>التجاوب (Responsive)</h3>
+                    <p class="body-2">جرب تغيير حجم النافذة لرؤية كيف تتكيف المسافات مع الشاشات المختلفة.</p>
+                    
+                    <div class="spacing-demo">
+                        <div class="spacing-preview">
+                            <div class="container-spacing">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card-spacing">
+                                            <h4 class="sub-heading-2">بطاقة متجاوبة</h4>
+                                            <p class="body-2">هذه البطاقة تستخدم نظام المسافات المتجاوب.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-spacing-small">
+                                            <h4 class="sub-heading-3">بطاقة صغيرة متجاوبة</h4>
+                                            <p class="body-3">هذه البطاقة الصغيرة تستخدم نظام المسافات المتجاوب.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacing-details">
+                            Container: .container-spacing | Max Width: 1440px | Padding: 0 130px<br>
+                            Mobile: Max Width: 393px | Padding: 0 18px
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utility Classes -->
+                <div class="spacing-section">
+                    <h3>Classes المساعدة (Utility Classes)</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">Gap Classes</h4>
+                            <ul class="body-2">
+                                <li>.gap-5xl-2 (88px)</li>
+                                <li>.gap-xl (48px)</li>
+                                <li>.gap-md (32px)</li>
+                                <li>.gap-sm-3 (16px)</li>
+                                <li>.gap-sm-5 (8px)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">Padding Classes</h4>
+                            <ul class="body-2">
+                                <li>.padding-box-2xl (56px)</li>
+                                <li>.padding-box-xl (48px)</li>
+                                <li>.padding-box-normal (32px)</li>
+                                <li>.padding-box-small (24px)</li>
+                                <li>.padding-box-small-3 (16px)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">Border Radius Classes</h4>
+                            <ul class="body-2">
+                                <li>.radius-dialog (40px)</li>
+                                <li>.radius-big-box (32px)</li>
+                                <li>.radius-normal-box (24px)</li>
+                                <li>.radius-small-box (16px)</li>
+                                <li>.radius-small-box-2 (12px)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">Button Classes</h4>
+                            <ul class="body-2">
+                                <li>.btn-height-xl (44px)</li>
+                                <li>.btn-height-lg (40px)</li>
+                                <li>.btn-height-sm (36px)</li>
+                                <li>.btn-radius (10px)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/language-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/optimizations.js"></script>
+
+    <script>
+        // Initialize language manager
+        const languageManager = new LanguageManager();
+        
+        // Add some interactive examples
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to spacing demos
+            const spacingDemos = document.querySelectorAll('.spacing-demo');
+            spacingDemos.forEach(demo => {
+                demo.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                    this.style.transition = 'transform 0.2s ease';
+                });
+                
+                demo.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+            
+            // Add click to copy functionality
+            const spacingDetails = document.querySelectorAll('.spacing-details');
+            spacingDetails.forEach(detail => {
+                detail.style.cursor = 'pointer';
+                detail.addEventListener('click', function() {
+                    const text = this.textContent.split(' | ')[0].replace('Class: ', '');
+                    navigator.clipboard.writeText(text).then(() => {
+                        const originalText = this.textContent;
+                        this.textContent = 'تم النسخ!';
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                        }, 1000);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,125 @@
+/* Fonts Configuration */
+
+/* Arabic Font - Cairo */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* English Font - Rounded Elegance */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Alternative: If you want to use actual Rounded Elegance font */
+/* Note: Rounded Elegance is a premium font, so we're using Inter as a free alternative */
+/* If you have the Rounded Elegance font files, you can add them here */
+
+/* Font Variables */
+:root {
+  /* Arabic Font */
+  --font-arabic: 'Cairo', sans-serif;
+
+  /* English Font */
+  --font-english: 'Inter', sans-serif;
+
+  /* Default Font (Arabic) */
+  --font-primary: var(--font-arabic);
+}
+
+/* Language-specific font classes */
+[lang="ar"],
+[dir="rtl"] {
+  font-family: var(--font-arabic) !important;
+}
+
+[lang="en"],
+[dir="ltr"] {
+  font-family: var(--font-english) !important;
+}
+
+/* Font weights for Arabic */
+.font-arabic-light {
+  font-weight: 300;
+}
+
+.font-arabic-regular {
+  font-weight: 400;
+}
+
+.font-arabic-medium {
+  font-weight: 500;
+}
+
+.font-arabic-semibold {
+  font-weight: 600;
+}
+
+.font-arabic-bold {
+  font-weight: 700;
+}
+
+.font-arabic-extrabold {
+  font-weight: 800;
+}
+
+.font-arabic-black {
+  font-weight: 900;
+}
+
+/* Font weights for English */
+.font-english-light {
+  font-weight: 300;
+}
+
+.font-english-regular {
+  font-weight: 400;
+}
+
+.font-english-medium {
+  font-weight: 500;
+}
+
+.font-english-semibold {
+  font-weight: 600;
+}
+
+.font-english-bold {
+  font-weight: 700;
+}
+
+.font-english-extrabold {
+  font-weight: 800;
+}
+
+.font-english-black {
+  font-weight: 900;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 36px;
+  }
+}
+
+/* Font optimization */
+.font-display {
+  font-display: swap;
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

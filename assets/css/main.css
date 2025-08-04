@@ -1,0 +1,309 @@
+/* ===== SOFA EXPERIENCE - MAIN CSS ===== */
+/* This file imports all component and page styles */
+
+/* ===== IMPORTS ===== */
+
+/* Base Styles */
+@import url("base/variables.css");
+@import url("base/fonts.css");
+@import url("base/typography.css");
+@import url("base/spacing.css");
+
+/* Layout */
+@import url("layout/layout.css");
+
+/* Utilities */
+@import url("utilities/utilities.css");
+@import url("utilities/inputs.css");
+@import url("utilities/animations.css");
+@import url("utilities/translations.css");
+
+/* UI Components */
+@import url("ui/header.css");
+@import url("ui/footer.css");
+@import url("ui/hero.css");
+@import url("ui/buttons.css");
+@import url("ui/forms.css");
+@import url("ui/cards.css");
+
+/* Pages */
+@import url("pages/homepage.css");
+
+/* ===== GLOBAL STYLES ===== */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ===== CUSTOM COMPONENTS ===== */
+
+/* Carousel Dots */
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--danger);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.owl-dot.active {
+  background: var(--primary);
+}
+
+.owl-carousel {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Step Box Colors */
+.order1 {
+  background-color: var(--primary);
+}
+
+.order2 {
+  background-color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.bg-order {
+  background-color: #979dac;
+}
+
+.bg-step2 {
+  background-color: #33415c;
+}
+
+.bg-step3 {
+  background-color: #c1b41c;
+}
+
+.bg_cart_responsve {
+  background-color: var(--success) !important;
+}
+
+/* Arrow Styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.left-arrow {
+  left: -20px;
+  border-right: 22px solid var(--text-heading);
+}
+
+.right-arrow {
+  right: -20px;
+  border-left: 22px solid var(--surface-white);
+}
+
+.arrow-1 {
+  border-left: 22px solid var(--primary) !important;
+}
+
+.arrow-7 {
+  border-left: 22px solid var(--success) !important;
+}
+
+.arrow-2 {
+  border-right: 22px solid var(--secondary) !important;
+}
+
+.arrow-3 {
+  border-left: 22px solid #979dac !important;
+}
+
+.arrow-4 {
+  border-left: 22px solid #33415c !important;
+}
+
+.arrow-5 {
+  border-right: 22px solid #c1b41c !important;
+}
+
+.arrow-6 {
+  border-right: 22px solid #33415c !important;
+}
+
+/* Step Box Sizes */
+.w-step {
+  width: 359px;
+  height: 72px;
+}
+
+.w-steplong {
+  width: 394px;
+  height: 72px;
+}
+
+/* Display Utilities */
+.display_end_box_steb {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.box_six_defalt {
+  width: 331px;
+}
+
+/* Text Colors */
+.text-gray {
+  color: var(--text-subheading);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Modal Styles */
+.modal {
+  overflow: visible !important;
+}
+
+.modal-dialog {
+  overflow: visible !important;
+}
+
+/* Overflow */
+.overflow-hidden {
+  overflow: visible !important;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+
+  .owl-theme .owl-dots {
+    bottom: 0;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 500px !important;
+    width: 219px !important;
+  }
+
+  .icone_slider {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart_responsve_1 {
+    width: 140px;
+    min-height: 74px;
+    height: auto;
+    padding: 2px !important;
+    font-size: 12px;
+    color: white !important;
+  }
+
+  .step-title {
+    color: white !important;
+  }
+
+  .float_left_responsve {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  .responsve_margin {
+    margin-top: 60px !important;
+  }
+
+  .responsve_margin3 {
+    margin-top: 60px !important;
+  }
+
+  .navbar {
+    z-index: 1055;
+  }
+
+  .offcanvas-body a.nav-link {
+    color: var(--text-heading);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .btn-help {
+    background-color: var(--primary);
+    color: white;
+    border-radius: var(--radius);
+  }
+
+  .language-option img {
+    width: 20px;
+    height: auto;
+  }
+
+  .offcanvas-body hr {
+    margin: 1.5rem 0;
+  }
+
+  .btn-custom-outline {
+    border: 1px solid white;
+    color: white;
+    border-radius: var(--radius);
+    padding: 5px 15px;
+    background: transparent;
+  }
+
+  .btn_navbar_order_help {
+    margin-top: 20px !important;
+  }
+
+  .vector-center-image {
+    display: none;
+  }
+}
+
+@media (max-width: 402px) and (max-height: 950px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 577px !important;
+  }
+}
+
+@media (max-width: 414px) and (max-width: 896px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 574px !important;
+  }
+
+  .responsev_margin {
+    margin-top: 130px;
+  }
+} 
+
+/* ===== LANGUAGE DROPDOWN STYLES ===== */
+/* Hide dropdown arrow from language selector - moved to header.css */ 

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الأزرار - SOFA Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <style>
+        .button-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-lg);
+            background-color: var(--surface-white);
+        }
+        
+        .button-section h3 {
+            color: var(--text-heading);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .button-demo {
+            margin: 0.5rem;
+            display: inline-block;
+        }
+        
+        .code-example {
+            background-color: var(--surface-dropbox);
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: var(--font-size-sm);
+            color: var(--text-body);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5 text-heading">عرض نظام الأزرار - SOFA Experience</h1>
+                
+                <!-- Primary Buttons -->
+                <div class="button-section">
+                    <h3>الأزرار الأساسية (Primary)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-primary">زر أساسي</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-sm">صغير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-lg">كبير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-xl">كبير جداً</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-rounded">مستدير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-pill">حبة</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-icon">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-loading">جاري التحميل</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-primary" disabled>معطل</button>
+                    </div>
+                    
+                    <div class="code-example">
+&lt;button class="btn btn-primary"&gt;زر أساسي&lt;/button&gt;
+&lt;button class="btn btn-primary btn-sm"&gt;صغير&lt;/button&gt;
+&lt;button class="btn btn-primary btn-lg"&gt;كبير&lt;/button&gt;
+&lt;button class="btn btn-primary btn-xl"&gt;كبير جداً&lt;/button&gt;
+&lt;button class="btn btn-primary btn-rounded"&gt;مستدير&lt;/button&gt;
+&lt;button class="btn btn-primary btn-pill"&gt;حبة&lt;/button&gt;
+&lt;button class="btn btn-primary btn-icon"&gt;&lt;i class="fas fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class="btn btn-primary btn-loading"&gt;جاري التحميل&lt;/button&gt;
+&lt;button class="btn btn-primary" disabled&gt;معطل&lt;/button&gt;
+                    </div>
+                </div>
+
+                <!-- Secondary Buttons -->
+                <div class="button-section">
+                    <h3>الأزرار الثانوية (Secondary)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary">زر ثانوي</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary btn-sm">صغير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary btn-lg">كبير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary btn-rounded">مستدير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary btn-icon">
+                            <i class="fas fa-star"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Outline Buttons -->
+                <div class="button-section">
+                    <h3>الأزرار المحددة (Outline)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-primary">محدد أساسي</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-secondary">محدد ثانوي</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-success">محدد نجاح</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-danger">محدد خطر</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-warning">محدد تحذير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-info">محدد معلومات</button>
+                    </div>
+                </div>
+
+                <!-- Ghost Buttons -->
+                <div class="button-section">
+                    <h3>الأزرار الشفافة (Ghost)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-ghost">شفاف عادي</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-ghost-primary">شفاف أساسي</button>
+                    </div>
+                </div>
+
+                <!-- Success Buttons -->
+                <div class="button-section">
+                    <h3>أزرار النجاح (Success)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-success">نجاح</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-success">محدد نجاح</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-success btn-icon">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Danger Buttons -->
+                <div class="button-section">
+                    <h3>أزرار الخطر (Danger)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-danger">خطر</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-danger">محدد خطر</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-danger btn-icon">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Warning Buttons -->
+                <div class="button-section">
+                    <h3>أزرار التحذير (Warning)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-warning">تحذير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-warning">محدد تحذير</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-warning btn-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Info Buttons -->
+                <div class="button-section">
+                    <h3>أزرار المعلومات (Info)</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-info">معلومات</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-outline-info">محدد معلومات</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-info btn-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Light & Dark Buttons -->
+                <div class="button-section">
+                    <h3>أزرار فاتحة وداكنة</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-light">فاتح</button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-dark">داكن</button>
+                    </div>
+                </div>
+
+                <!-- Button Groups -->
+                <div class="button-section">
+                    <h3>مجموعات الأزرار</h3>
+                    <div class="button-demo">
+                        <div class="btn-group">
+                            <button class="btn btn-primary">الأول</button>
+                            <button class="btn btn-primary">الثاني</button>
+                            <button class="btn btn-primary">الثالث</button>
+                        </div>
+                    </div>
+                    <div class="button-demo">
+                        <div class="btn-group">
+                            <button class="btn btn-outline-primary">الأول</button>
+                            <button class="btn btn-outline-primary">الثاني</button>
+                            <button class="btn btn-outline-primary">الثالث</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Square Buttons -->
+                <div class="button-section">
+                    <h3>أزرار مربعة</h3>
+                    <div class="button-demo">
+                        <button class="btn btn-primary btn-square">
+                            <i class="fas fa-home"></i>
+                        </button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-secondary btn-square btn-sm">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                    </div>
+                    <div class="button-demo">
+                        <button class="btn btn-success btn-square btn-lg">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Floating Action Button -->
+                <div class="button-section">
+                    <h3>زر العائمة (FAB)</h3>
+                    <p>زر العائمة سيظهر في أسفل يمين الصفحة</p>
+                    <div class="code-example">
+&lt;button class="btn btn-fab"&gt;
+    &lt;i class="fas fa-plus"&gt;&lt;/i&gt;
+&lt;/button&gt;
+                    </div>
+                </div>
+
+                <!-- Color Palette -->
+                <div class="button-section">
+                    <h3>لوحة الألوان المستخدمة</h3>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--primary); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Primary<br>#06306c
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--secondary); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Secondary<br>#a5886c
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--success); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Success<br>#52b228
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--danger); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Danger<br>#d4342c
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--warning); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Warning<br>#c1b471
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div style="background-color: var(--info); height: 60px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                Info<br>#277aed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="btn btn-fab" onclick="alert('زر العائمة تم النقر عليه!')">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/language-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/optimizations.js"></script>
+
+    <script>
+        // Initialize language manager
+        const languageManager = new LanguageManager();
+        
+        // Add some interactive examples
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click handlers to demonstrate button states
+            const buttons = document.querySelectorAll('.btn:not(.btn-loading):not([disabled])');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    if (!this.classList.contains('btn-fab')) {
+                        e.preventDefault();
+                        const originalText = this.textContent;
+                        this.textContent = 'تم النقر!';
+                        this.classList.add('btn-loading');
+                        
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.classList.remove('btn-loading');
+                        }, 1000);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

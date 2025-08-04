@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض Typography - SOFA Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <style>
+        .typography-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius-lg);
+            background-color: var(--surface-white);
+        }
+        
+        .typography-section h3 {
+            color: var(--text-heading);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .text-example {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius);
+            background-color: var(--surface-dropbox);
+        }
+        
+        .text-example .text-preview {
+            margin-bottom: 0.5rem;
+        }
+        
+        .text-example .text-details {
+            font-size: var(--font-size-sm);
+            color: var(--text-caption);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .font-family-demo {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--surface-border);
+            border-radius: var(--radius);
+        }
+        
+        .font-family-demo.arabic {
+            background-color: var(--primary-50);
+        }
+        
+        .font-family-demo.english {
+            background-color: var(--secondary-50);
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .color-item {
+            padding: 1rem;
+            border-radius: var(--radius);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .color-item.light {
+            color: var(--text-heading);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5 heading-h1">عرض نظام Typography - SOFA Experience</h1>
+                
+                <!-- Font Families -->
+                <div class="typography-section">
+                    <h3>عائلات الخطوط</h3>
+                    
+                    <div class="font-family-demo arabic">
+                        <h4 class="sub-heading-1">الخط العربي - Cairo</h4>
+                        <p class="body-1">هذا مثال على النص العربي باستخدام خط Cairo. يمكن استخدام هذا الخط للعناوين والنصوص الأساسية في المشروع.</p>
+                        <p class="caption-1">هذا مثال على النص العربي باستخدام خط Cairo للعناوين الفرعية.</p>
+                    </div>
+                    
+                    <div class="font-family-demo english">
+                        <h4 class="sub-heading-1" style="font-family: var(--font-english);">English Font - Inter (Rounded Elegance Alternative)</h4>
+                        <p class="body-1" style="font-family: var(--font-english);">This is an example of English text using Inter font. This font can be used for headings and body text in the project.</p>
+                        <p class="caption-1" style="font-family: var(--font-english);">This is an example of English text using Inter font for subheadings.</p>
+                    </div>
+                </div>
+
+                <!-- Headings -->
+                <div class="typography-section">
+                    <h3>العناوين (Headings)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h1">العنوان الرئيسي H1 - 64px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h1 | Font: Cairo | Weight: 800 | Size: 64px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h2">العنوان الرئيسي H2 - 56px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h2 | Font: Cairo | Weight: 800 | Size: 56px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h3">العنوان الرئيسي H3 - 48px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h3 | Font: Cairo | Weight: 800 | Size: 48px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h4">العنوان الرئيسي H4 - 40px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h4 | Font: Cairo | Weight: 800 | Size: 40px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h5">العنوان الرئيسي H5 - 32px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h5 | Font: Cairo | Weight: 800 | Size: 32px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h6">العنوان الرئيسي H6 - 24px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h6 | Font: Cairo | Weight: 800 | Size: 24px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h7">العنوان الرئيسي H7 - 18px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h7 | Font: Cairo | Weight: 800 | Size: 18px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h8">العنوان الرئيسي H8 - 16px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h8 | Font: Cairo | Weight: 800 | Size: 16px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h9">العنوان الرئيسي H9 - 14px ExtraBold</div>
+                        <div class="text-details">Class: .heading-h9 | Font: Cairo | Weight: 800 | Size: 14px</div>
+                    </div>
+                </div>
+
+                <!-- Sub Headings -->
+                <div class="typography-section">
+                    <h3>العناوين الفرعية (Sub Headings)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview sub-heading-1">العنوان الفرعي 1 - 20px Bold</div>
+                        <div class="text-details">Class: .sub-heading-1 | Font: Cairo | Weight: 700 | Size: 20px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview sub-heading-2">العنوان الفرعي 2 - 18px Bold</div>
+                        <div class="text-details">Class: .sub-heading-2 | Font: Cairo | Weight: 700 | Size: 18px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview sub-heading-3">العنوان الفرعي 3 - 16px Bold</div>
+                        <div class="text-details">Class: .sub-heading-3 | Font: Cairo | Weight: 700 | Size: 16px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview sub-heading-4">العنوان الفرعي 4 - 14px Bold</div>
+                        <div class="text-details">Class: .sub-heading-4 | Font: Cairo | Weight: 700 | Size: 14px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview sub-heading-5">العنوان الفرعي 5 - 13px Bold</div>
+                        <div class="text-details">Class: .sub-heading-5 | Font: Cairo | Weight: 700 | Size: 13px</div>
+                    </div>
+                </div>
+
+                <!-- Body Text -->
+                <div class="typography-section">
+                    <h3>النص الأساسي (Body Text)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-1">النص الأساسي 1 - 16px Medium</div>
+                        <div class="text-details">Class: .body-1 | Font: Cairo | Weight: 500 | Size: 16px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-2">النص الأساسي 2 - 14px Medium (Line Height: 150%)</div>
+                        <div class="text-details">Class: .body-2 | Font: Cairo | Weight: 500 | Size: 14px | Line Height: 150%</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-3">النص الأساسي 3 - 13px Medium</div>
+                        <div class="text-details">Class: .body-3 | Font: Cairo | Weight: 500 | Size: 13px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-4">النص الأساسي 4 - 12px Medium</div>
+                        <div class="text-details">Class: .body-4 | Font: Cairo | Weight: 500 | Size: 12px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-5">النص الأساسي 5 - 10px Medium</div>
+                        <div class="text-details">Class: .body-5 | Font: Cairo | Weight: 500 | Size: 10px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-6">النص الأساسي 6 - 8px Medium</div>
+                        <div class="text-details">Class: .body-6 | Font: Cairo | Weight: 500 | Size: 8px</div>
+                    </div>
+                </div>
+
+                <!-- Captions -->
+                <div class="typography-section">
+                    <h3>النصوص التوضيحية (Captions)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-1">النص التوضيحي 1 - 18px Medium (Line Height: 30px)</div>
+                        <div class="text-details">Class: .caption-1 | Font: Cairo | Weight: 500 | Size: 18px | Line Height: 30px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-2">النص التوضيحي 2 - 16px Medium (Line Height: 26px)</div>
+                        <div class="text-details">Class: .caption-2 | Font: Cairo | Weight: 500 | Size: 16px | Line Height: 26px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-3">النص التوضيحي 3 - 15px Medium (Line Height: 25px)</div>
+                        <div class="text-details">Class: .caption-3 | Font: Cairo | Weight: 500 | Size: 15px | Line Height: 25px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-4">النص التوضيحي 4 - 14px Medium (Line Height: 24px)</div>
+                        <div class="text-details">Class: .caption-4 | Font: Cairo | Weight: 500 | Size: 14px | Line Height: 24px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-5">النص التوضيحي 5 - 13px Medium (Line Height: 22px)</div>
+                        <div class="text-details">Class: .caption-5 | Font: Cairo | Weight: 500 | Size: 13px | Line Height: 22px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview caption-6">النص التوضيحي 6 - 12px Medium (Line Height: 20px)</div>
+                        <div class="text-details">Class: .caption-6 | Font: Cairo | Weight: 500 | Size: 12px | Line Height: 20px</div>
+                    </div>
+                </div>
+
+                <!-- Button Typography -->
+                <div class="typography-section">
+                    <h3>خطوط الأزرار (Button Typography)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview button-xl">زر كبير - 14px Bold (Line Height: 24px)</div>
+                        <div class="text-details">Class: .button-xl | Font: Cairo | Weight: 700 | Size: 14px | Line Height: 24px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview button-lg">زر متوسط - 13px Bold (Line Height: 24px)</div>
+                        <div class="text-details">Class: .button-lg | Font: Cairo | Weight: 700 | Size: 13px | Line Height: 24px</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview button-sm">زر صغير - 13px Bold (Line Height: 20px)</div>
+                        <div class="text-details">Class: .button-sm | Font: Cairo | Weight: 700 | Size: 13px | Line Height: 20px</div>
+                    </div>
+                </div>
+
+                <!-- Font Weights -->
+                <div class="typography-section">
+                    <h3>أوزان الخطوط (Font Weights)</h3>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-light">خط خفيف - Font Weight: 300</div>
+                        <div class="text-details">Class: .font-light | Weight: 300</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-normal">خط عادي - Font Weight: 400</div>
+                        <div class="text-details">Class: .font-normal | Weight: 400</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-medium">خط متوسط - Font Weight: 500</div>
+                        <div class="text-details">Class: .font-medium | Weight: 500</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-semibold">خط شبه عريض - Font Weight: 600</div>
+                        <div class="text-details">Class: .font-semibold | Weight: 600</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-bold">خط عريض - Font Weight: 700</div>
+                        <div class="text-details">Class: .font-bold | Weight: 700</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-extrabold">خط عريض جداً - Font Weight: 800</div>
+                        <div class="text-details">Class: .font-extrabold | Weight: 800</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview font-black">خط أسود - Font Weight: 900</div>
+                        <div class="text-details">Class: .font-black | Weight: 900</div>
+                    </div>
+                </div>
+
+                <!-- Text Colors -->
+                <div class="typography-section">
+                    <h3>ألوان النصوص</h3>
+                    
+                    <div class="color-palette">
+                        <div class="color-item" style="background-color: var(--text-heading);">
+                            <div class="text-heading">Text Heading</div>
+                            <small>#091013</small>
+                        </div>
+                        
+                        <div class="color-item" style="background-color: var(--text-subheading);">
+                            <div class="text-subheading">Text Subheading</div>
+                            <small>#314050</small>
+                        </div>
+                        
+                        <div class="color-item light" style="background-color: var(--text-body);">
+                            <div class="text-body">Text Body</div>
+                            <small>#64768e</small>
+                        </div>
+                        
+                        <div class="color-item light" style="background-color: var(--text-caption);">
+                            <div class="text-caption">Text Caption</div>
+                            <small>#768495</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Utilities -->
+                <div class="typography-section">
+                    <h3>أدوات النصوص (Text Utilities)</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">محاذاة النصوص</h4>
+                            <p class="text-left body-2">نص محاذى لليسار</p>
+                            <p class="text-center body-2">نص محاذى للمنتصف</p>
+                            <p class="text-right body-2">نص محاذى لليمين</p>
+                            <p class="text-justify body-2">نص مبرر على كامل العرض. هذا مثال على النص الذي يمكن أن يحل محل النص الأساسي في المشروع.</p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">تحويل النصوص</h4>
+                            <p class="text-uppercase body-2">نص بأحرف كبيرة</p>
+                            <p class="text-lowercase body-2">نص بأحرف صغيرة</p>
+                            <p class="text-capitalize body-2">نص بأحرف كبيرة في بداية كل كلمة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">تزيين النصوص</h4>
+                            <p class="text-underline body-2">نص مسطر</p>
+                            <p class="text-line-through body-2">نص مشطوب</p>
+                            <p class="text-no-decoration body-2">نص بدون تزيين</p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h4 class="sub-heading-2">ارتفاع السطر</h4>
+                            <p class="leading-tight body-2">نص بارتفاع سطر ضيق</p>
+                            <p class="leading-normal body-2">نص بارتفاع سطر عادي</p>
+                            <p class="leading-relaxed body-2">نص بارتفاع سطر مريح</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsive Demo -->
+                <div class="typography-section">
+                    <h3>التجاوب (Responsive)</h3>
+                    <p class="body-2">جرب تغيير حجم النافذة لرؤية كيف تتكيف أحجام الخطوط مع الشاشات المختلفة.</p>
+                    
+                    <div class="text-example">
+                        <div class="text-preview heading-h1">عنوان متجاوب H1</div>
+                        <div class="text-details">يتغير من 64px إلى 48px إلى 36px حسب حجم الشاشة</div>
+                    </div>
+                    
+                    <div class="text-example">
+                        <div class="text-preview body-1">نص أساسي متجاوب</div>
+                        <div class="text-details">يتغير من 16px إلى 14px إلى 13px حسب حجم الشاشة</div>
+                    </div>
+                </div>
+
+                <!-- Language Switch Demo -->
+                <div class="typography-section">
+                    <h3>تبديل اللغة</h3>
+                    <button class="btn btn-primary" onclick="toggleLanguage()">تبديل اللغة / Switch Language</button>
+                    
+                    <div id="arabic-text" class="mt-3">
+                        <h4 class="sub-heading-1">النص العربي</h4>
+                        <p class="body-1">هذا مثال على النص العربي باستخدام خط Cairo. يمكن استخدام هذا الخط للعناوين والنصوص الأساسية في المشروع.</p>
+                    </div>
+                    
+                    <div id="english-text" class="mt-3" style="display: none;">
+                        <h4 class="sub-heading-1" style="font-family: var(--font-english);">English Text</h4>
+                        <p class="body-1" style="font-family: var(--font-english);">This is an example of English text using Inter font. This font can be used for headings and body text in the project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/language-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/optimizations.js"></script>
+
+    <script>
+        // Initialize language manager
+        const languageManager = new LanguageManager();
+        
+        // Language toggle function
+        function toggleLanguage() {
+            const arabicText = document.getElementById('arabic-text');
+            const englishText = document.getElementById('english-text');
+            
+            if (arabicText.style.display === 'none') {
+                arabicText.style.display = 'block';
+                englishText.style.display = 'none';
+            } else {
+                arabicText.style.display = 'none';
+                englishText.style.display = 'block';
+            }
+        }
+        
+        // Add some interactive examples
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to text examples
+            const textExamples = document.querySelectorAll('.text-example');
+            textExamples.forEach(example => {
+                example.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                    this.style.transition = 'transform 0.2s ease';
+                });
+                
+                example.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

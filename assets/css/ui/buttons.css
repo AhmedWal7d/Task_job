@@ -1,0 +1,360 @@
+/* ===== SOFA EXPERIENCE - BUTTONS SYSTEM ===== */
+
+/* ===== PRIMARY BUTTONS ===== */
+
+/* Main Primary Button */
+.btn-custom-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--surface-white);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  width: 192px;
+  font-size: 14px;
+  line-height: 24px;
+  min-height: var(--button-lg-height);
+  border-radius: var(--button-radius);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-custom-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+.btn-custom-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--surface-white);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  width: 192px;
+  font-size: 14px;
+  line-height: 24px;
+  min-height: var(--button-lg-height);
+  border-radius: var(--button-radius);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-custom-secondary:hover {
+  background-color: var(--secondary-hover, #AD996F);
+  border-color: var(--secondary-hover, #AD996F);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== OUTLINE BUTTONS ===== */
+
+/* White Outline Button */
+.btn-custom-outline {
+  border: 2px solid var(--surface-white);
+  color: var(--text-heading);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  width: 192px;
+  margin-left: var(--gap-sm-5);
+  background-color: var(--surface-white);
+  font-size: 14px;
+  line-height: 24px;
+  min-height: var(--button-lg-height);
+  border-radius: var(--button-radius);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-custom-outline:hover {
+  background-color: var(--surface-white);
+  color: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Border Button (White Border) */
+.border-btn {
+  border: 1px solid var(--surface-white);
+  color: var(--surface-white);
+  width: 120px;
+  font-size: 13px !important;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: var(--spacing-xs) var(--spacing-md);
+  transition: all var(--transition-normal);
+}
+
+.border-btn:hover {
+  background-color: var(--surface-white);
+  color: var(--text-heading);
+  transform: translateY(-1px);
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+/* Submit Button */
+.btn-submit {
+  background-color: var(--primary) !important;
+  color: var(--surface-white) !important;
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  min-height: var(--button-lg-height) !important;
+  font-weight: 600;
+  width: 436px;
+  font-size: 14px;
+  transition: all var(--transition-normal);
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+  background-color: var(--primary);
+  width: 280px;
+  min-height: var(--button-lg-height);
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+  color: var(--surface-white);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Arrow Button */
+.btn-arrow {
+  background-color: var(--secondary);
+  color: var(--surface-white);
+  width: 194px;
+  min-height: var(--button-lg-height);
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-arrow:hover {
+  background-color: var(--secondary-hover, #AD996F);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Switch Button */
+.btn-witch {
+  width: 230px;
+  background-color: var(--secondary);
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--surface-white);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-witch:hover {
+  background-color: var(--secondary-hover, #AD996F);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== NAVIGATION BUTTONS ===== */
+
+/* Order Help Button */
+.order_healp {
+  background-color: transparent !important;
+  color: var(--surface-white);
+  font-size: 13px !important;
+  width: 132px !important;
+  border: 1px solid var(--surface-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  transition: all var(--transition-normal);
+  margin: 0;
+}
+
+.order_healp:hover {
+  background-color: var(--surface-white) !important;
+  color: var(--text-heading) !important;
+  font-size: 13px !important;
+  transform: translateY(-1px);
+}
+
+/* Help Button (Mobile) */
+.btn-help {
+  background-color: var(--primary);
+  color: var(--surface-white);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.btn-help:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== UTILITY BUTTONS ===== */
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  min-height: var(--button-lg-height);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: #333;
+  color: var(--surface-white);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 16px;
+  display: none;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--transition-normal);
+}
+
+.scroll-to-top:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===== BUTTON SIZES ===== */
+
+/* Large Button */
+.btn-lg {
+  min-height: var(--button-lg-height);
+  font-size: 16px;
+  padding: var(--spacing-sm) var(--spacing-xl);
+}
+
+/* Small Button */
+.btn-sm {
+  min-height: var(--button-sm-height);
+  font-size: 12px;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+/* Full Width Button */
+.btn-w-100 {
+  width: 100% !important;
+}
+
+/* ===== BUTTON STATES ===== */
+
+/* Disabled Button */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Loading Button */
+.btn-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* ===== RESPONSIVE BUTTONS ===== */
+
+@media (max-width: 768px) {
+  /* Mobile Primary & Outline Buttons */
+  .btn-custom-primary,
+  .btn-custom-outline {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Mobile Action Buttons */
+  .btn-witch,
+  .border-btn {
+    width: 100% !important;
+  }
+
+  /* Mobile Submit Button */
+  .btn-submit {
+    width: 100%;
+  }
+
+  /* Mobile WhatsApp & Arrow Buttons */
+  .btn-whatsapp,
+  .btn-arrow {
+    width: 100%;
+  }
+
+  /* Mobile Responsive Spacing */
+  .responsve-btn {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    margin-right: 0 !important;
+  }
+
+  /* Mobile Button Sizes */
+  .btn-lg {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .btn-sm {
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small Mobile Adjustments */
+  .btn-custom-primary,
+  .btn-custom-outline,
+  .btn-submit,
+  .btn-whatsapp,
+  .btn-arrow,
+  .btn-witch {
+    font-size: 13px;
+    height: 40px;
+  }
+} 

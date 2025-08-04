@@ -1,0 +1,67 @@
+<!-- Header Component -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
+  <div class="container pt-3">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/Logo.png" alt="Logo" />
+    </a>
+    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <img src="assets/images/menu.png" alt="menu" />
+    </button>
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item active_navbar"><a class="nav-link text-white active" href="#">الرئيسية </a></li>
+        <li class="nav-item "><a class="nav-link item_navbar" href="#">التصنيفات</a></li>
+        <li class="nav-item "><a class="nav-link item_navbar" href="#">من نحن</a></li>
+        <li class="nav-item "><a class="nav-link item_navbar" href="#">المعرض</a></li>
+        <li class="nav-item "><a class="nav-link item_navbar" href="#">المدونة</a></li>
+        <li class="nav-item "><a class="nav-link item_navbar" href="#">اتصل بنا</a></li>
+      </ul>
+      <form class="d-flex align-items-center gap-3">
+        <div class="profileuser" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="assets/images/Profile Icon.png" alt="Profile" />
+        </div>
+        <div class="dropdown">
+          <button class="bg-transparent border-0 dropdown-toggle" type="button" id="languageDropdown"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/images/Globe Icon.png" alt="Globe" width="20">
+          </button>
+          <ul style="height: 113px !important" class="dropdown-menu text-end shadow rounded-4 h_langage_change"
+            aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <label for="arabicCheckbox" class="d-flex align-items-center gap-1 mb-0 image_navbar_langge"
+                    style="cursor: pointer;">
+                    <img src="assets/images/Notification Title.png" alt="Arabic" />
+                    <span>العربية</span>
+                  </label>
+                  <input class="form-check-input border_input_navbar" type="checkbox" id="arabicCheckbox"
+                    style="cursor: pointer;" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <label for="englishCheckbox" class="d-flex align-items-center gap-1 mb-0 image_navbar_langge"
+                    style="cursor: pointer;">
+                    <img src="assets/images/Notification Title (1).png" alt="English" />
+                    <span>English</span>
+                  </label>
+                  <input class="form-check-input border_input_navbar" type="checkbox" id="englishCheckbox"
+                    style="cursor: pointer;" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-custom-outline order_healp text-white">طلب مساعدة</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="border border-white w-100"></div> 

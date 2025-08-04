@@ -1,0 +1,44 @@
+{
+  "name": "SOFA Experience - منصة تأثيث فندقية",
+  "short_name": "SOFA",
+  "description": "منصة تأثيث ذكية للوحدات الفندقية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1c2132",
+  "theme_color": "#AD996F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "lifestyle", "shopping"],
+  "lang": "ar",
+  "dir": "rtl",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "assets/images/screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+} 

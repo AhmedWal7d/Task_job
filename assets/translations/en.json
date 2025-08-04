@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "title": "SOFA Experience",
+    "description": "Smart furnishing platform for hotel units",
+    "keywords": "hotel furnishing, furniture, interior design, hotel units"
+  },
+  "navigation": {
+    "home": "Home",
+    "categories": "Categories",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "orderHelp": "Request Help",
+    "close": "Close",
+    "myAccount": "My Account",
+    "myOrders": "My Orders",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Hotel furnishing ready from order to delivery",
+    "subtitle": "We provide you with a professional furnishing solution, pre-designed with care and ready for quick implementation... everything you need in one package",
+    "browsePackages": "Browse Packages",
+    "orderNow": "Order Now",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "steps": {
+    "title": "Your unit preparation stages",
+    "step1": {
+      "title": "Choose Unit",
+      "description": "Studio or rooms"
+    },
+    "step2": {
+      "title": "Customize Colors",
+      "description": "Style and furnishing"
+    },
+    "step3": {
+      "title": "Approve Package",
+      "description": "Preparation plan"
+    },
+    "step4": {
+      "title": "Supply & Installation",
+      "description": "Shipping and setup"
+    },
+    "step5": {
+      "title": "Delivery",
+      "description": "Ready for occupancy"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Smart furnishing platform for hotel units",
+    "description": "We provide diverse integrated choices for completely furnishing your hotel unit with the highest attractive designs and pre-determined to facilitate creating ready solutions for complete purchase orders through a unified and smooth platform.",
+    "features": {
+      "timeSaving": "Time saving",
+      "costSaving": "High cost saving",
+      "readyDelivery": "Complete delivery readiness"
+    },
+    "cta": "Learn about our work method"
+  },
+  "form": {
+    "title": "Choose the right package for your unit",
+    "subtitle": "Complete hotel furnishing packages, ready for implementation within 90 days, with elegant design and color options",
+    "unitType": "Unit Type",
+    "unitTypes": {
+      "studio": "Studio",
+      "oneRoom": "One bedroom",
+      "twoRooms": "Two rooms",
+      "unknown": "I don't know"
+    },
+    "finishPattern": "Previous finish pattern in the project",
+    "finishPatterns": {
+      "paintSystem": "Project with paint system",
+      "deliveryUnits": "Project with delivery units"
+    },
+    "designNeed": "Do you need ready interior design?",
+    "designNeeds": {
+      "needHelp": "Yes, I need help",
+      "noHelp": "No"
+    },
+    "colorHelp": "Do you need help choosing colors?",
+    "colorHelps": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "submit": "Show Packages"
+  },
+  "packages": {
+    "title": "Choose the right package for your unit",
+    "subtitle": "Complete hotel furnishing packages, ready for implementation within 90 days, with elegant design and color options",
+    "card": {
+      "title": "One bedroom package",
+      "pieces": "30 pieces",
+      "description": "Perfect for small spaces, provides comfort and elegance",
+      "startingFrom": "Starting from",
+      "includes": "Includes:",
+      "features": {
+        "bedroom": "Bedroom",
+        "livingRoom": "Living room",
+        "diningTable": "Dining table"
+      },
+      "availableColors": "Available colors:",
+      "executionTime": "Execution time:",
+      "executionTimeValue": "15–20 working days",
+      "service": "Service",
+      "serviceValue": "Includes complete installation and delivery",
+      "paymentPlan": "Payment plan:",
+      "paymentPlanValue": "50% advance – 50% before delivery",
+      "decoration": "Decoration:",
+      "decorationValue": "Basic simple decoration",
+      "sendPrice": "Send me price quote",
+      "viewDetails": "View details",
+      "readyForDelivery": "Ready for quick delivery"
+    }
+  },
+  "process": {
+    "title": "Easy steps to complete your unit furnishing",
+    "subtitle": "Clear and fast steps from choosing the package until receiving your fully furnished unit",
+    "steps": {
+      "step1": {
+        "title": "Choose package and color",
+        "description": "Choose the appropriate design from color options: calm and neutral or earthy and warm"
+      },
+      "step2": {
+        "title": "Fill smart form",
+        "description": "Enter your data and number of units, and we'll handle the rest"
+      },
+      "step3": {
+        "title": "Receive price quote and approval",
+        "description": "We send you a detailed pricing with approval before implementation"
+      },
+      "step4": {
+        "title": "Receive your furnished unit",
+        "description": "We handle implementation, shipping, and installation to your unit door"
+      }
+    },
+    "cta": "Start now or get price quote",
+    "orderStatus": {
+      "title": "Current order status",
+      "status": "Installation in progress 80%",
+      "profile": {
+        "name": "Eng. Ahmed Ibrahim",
+        "units": "2 units"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "Why us?",
+    "subtitle": "Because you deserve complete hotel furnishing... with quality, speed, and comfort.",
+    "reasons": {
+      "reason1": {
+        "title": "Immediate completion within 14 days",
+        "description": "We provide you with a ready package delivered within a short period without delay"
+      },
+      "reason2": {
+        "title": "Comprehensive and clear prices",
+        "description": "Unified price includes everything: furniture, shipping, installation"
+      },
+      "reason3": {
+        "title": "Guaranteed hotel quality",
+        "description": "Careful selection of materials and implementation to standards suitable for use"
+      },
+      "reason4": {
+        "title": "Smart tracking system",
+        "description": "Track order status step by step through a digital dashboard"
+      },
+      "reason5": {
+        "title": "Notifications at every stage",
+        "description": "We keep you fully informed at every stage: from manufacturing"
+      },
+      "reason6": {
+        "title": "Complete furnished delivery",
+        "description": "Everything you need in one place – receive your unit ready"
+      }
+    }
+  },
+  "orderTracking": {
+    "title": "Track your order progress moment by moment",
+    "subtitle": "Timeline showing every stage from order to final delivery, always in the picture",
+    "timeline": {
+      "orderPlaced": {
+        "title": "Order placed",
+        "description": "Your order has been received successfully and is being reviewed internally"
+      },
+      "design": {
+        "title": "Design",
+        "description": "Drawings are prepared and style is selected"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "We start implementing furniture according to measurements and specifications"
+      },
+      "shipping": {
+        "title": "Shipping",
+        "description": "Order is shipped to your location with delivery time notification"
+      },
+      "installation": {
+        "title": "Installation and delivery",
+        "description": "Furniture is fully installed and delivered to the unit"
+      },
+      "completed": {
+        "title": "Installation and delivery",
+        "description": "Order has been fully delivered and handed over successfully"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to furnish your unit?",
+    "subtitle": "Start your first step now... our packages are ready for implementation and delivery in record time",
+    "whatsapp": "Chat with us on WhatsApp",
+    "orderNow": "Order now"
+  },
+  "testimonials": {
+    "title": "Our clients' trust... is our biggest achievement",
+    "subtitle": "Our clients' opinions reflect the level of quality, comfort, and professionalism at every step of the purchase experience.",
+    "testimonial": {
+      "text": "Order arrived on time, excellent service as shown on the website. Thank you!",
+      "author": "Salem Al-Harbi",
+      "location": "Dammam",
+      "rating": "★★★★★"
+    }
+  },
+  "gallery": {
+    "title": "See our furnishing samples",
+    "subtitle": "We provide you with a visual glimpse of the furnishing level, details, and finishing in our previous projects",
+    "categories": {
+      "bedroom": "Bedroom",
+      "livingRoom": "Living room",
+      "diningRoom": "Dining room",
+      "kitchen": "Kitchen"
+    }
+  },
+  "faq": {
+    "title": "Your questions... we answer them clearly",
+    "subtitle": "Everything you need to know before ordering, we've gathered it here briefly and transparently",
+    "questions": {
+      "q1": {
+        "question": "How long does package preparation and delivery take?",
+        "answer": "Depends on the chosen package type, and duration will be determined accurately after order review."
+      },
+      "q2": {
+        "question": "Can package content be modified?",
+        "answer": "Yes, simple modifications can be made within the package scope after technical team review."
+      },
+      "q3": {
+        "question": "What payment options are available?",
+        "answer": "You can pay in cash, via bank transfer, or using a credit card."
+      },
+      "q4": {
+        "question": "Does the price include installation and delivery?",
+        "answer": "Yes, the price includes installation and delivery unless otherwise stated."
+      },
+      "q5": {
+        "question": "Can we contact the team before ordering?",
+        "answer": "Yes, you can contact us before ordering to clarify any details or inquiries."
+      }
+    }
+  },
+  "footer": {
+    "vision": "Part of Saudi Vision 2030",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 SOFA Furnishing Co. All rights reserved.",
+    "links": {
+      "home": "Home",
+      "packages": "Packages",
+      "about": "About Us",
+      "faq": "FAQ",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "phone": "+966 500000000",
+      "email": "info@sofa.com"
+    }
+  },
+  "modal": {
+    "login": "Login",
+    "register": "Create Account",
+    "close": "Close",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Example 5xxxxxxx",
+      "email": "Email (optional)",
+      "emailPlaceholder": "Enter email",
+      "continue": "Continue",
+      "search": "Search here"
+    },
+    "countries": {
+      "egypt": "Egypt",
+      "uae": "UAE",
+      "saudi": "Saudi Arabia"
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "phone": "Please enter a valid phone number",
+    "minLength": "Text must be at least {min} characters",
+    "maxLength": "Text must be at most {max} characters",
+    "min": "Number must be at least {min}",
+    "max": "Number must be at most {max}"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Successfully completed",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "view": "View",
+    "download": "Download",
+    "print": "Print",
+    "share": "Share"
+  },
+  "language": {
+    "arabic": "العربية",
+    "english": "English"
+  }
+} 

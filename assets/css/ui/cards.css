@@ -1,0 +1,233 @@
+/* ===== CARDS COMPONENT ===== */
+
+/* Package Card */
+.package-card {
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-2xl);
+  background-color: var(--surface-white);
+  overflow: hidden;
+}
+
+.imagehomebanner {
+  height: 293px;
+  width: 100%;
+}
+
+/* Price */
+.price {
+  color: var(--text-heading);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Features */
+.feature {
+  border-radius: 30px;
+  border: 1px solid var(--surface-border);
+  padding: 3px 8px;
+  font-size: 14px;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* Color Circles */
+.color-circle {
+  width: 34.75px;
+  height: 16px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Card Labels */
+.shmal {
+  width: 100px;
+  color: var(--text-caption);
+}
+
+.title-cart-head {
+  font-weight: 700;
+  color: var(--text-subheading);
+  font-size: 16px;
+}
+
+.p-color {
+  color: var(--secondary) !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Absolute Div */
+.div-absolute {
+  background-color: #33415c;
+  width: 220px;
+  height: 30px;
+  color: var(--surface-white);
+  text-align: center;
+  font-size: 12px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  top: 0;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  border-radius: var(--radius-xl);
+  background: var(--surface-white);
+  padding: var(--spacing-xl);
+  height: 208px;
+  box-shadow: var(--shadow-sm);
+  text-align: right;
+}
+
+.testimonial-card .stars {
+  direction: ltr;
+  color: #ffc107;
+  font-size: 1.1rem;
+}
+
+.testimonial-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+/* Step Box */
+.step-box {
+  border-radius: var(--radius);
+  padding: 8px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--surface-white);
+  position: relative;
+  width: 292px;
+  height: auto;
+}
+
+.step-box1 {
+  border-radius: var(--radius);
+  padding: 8px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--surface-white);
+  position: relative;
+  width: 292px;
+}
+
+/* Card Right */
+.card-right {
+  background-color: var(--secondary);
+  padding: 30px;
+  border-radius: 15px;
+  height: 500px;
+  width: 350px;
+  color: var(--surface-white);
+  margin: auto;
+  position: relative;
+}
+
+.card-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid inherit;
+}
+
+/* Status Order */
+.status_order {
+  width: 280px;
+  height: 104px;
+  border-radius: var(--radius-xl) !important;
+  padding: 16px !important;
+}
+
+.bg-light-custom {
+  background-color: #c1b393;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: var(--primary);
+}
+
+.progressbar {
+  width: 247.9994354248047px !important;
+  height: 8px !important;
+}
+
+/* Responsive Cards */
+@media (max-width: 768px) {
+  .cart_responsve_1 {
+    width: 140px;
+    min-height: 74px;
+    height: auto;
+    padding: 2px !important;
+    font-size: 12px;
+    color: white !important;
+  }
+
+  .step-title {
+    color: white !important;
+  }
+
+  .card-right {
+    width: 100%;
+  }
+
+  .w-step,
+  .bg-step2 {
+    width: 100%;
+  }
+
+  .shmal {
+    width: 112px;
+    color: var(--text-caption);
+  }
+
+  .feature {
+    border-radius: 30px;
+    border: 1px solid var(--surface-border);
+    padding: 2px 0px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .shmal-responsve {
+    width: 37px;
+    font-size: 12px;
+  }
+
+  .wresponsve-98 {
+    width: 76px;
+  }
+
+  .color-circle {
+    width: 37.75px;
+    margin-right: 0;
+  }
+
+  .font-responsve-12 {
+    font-size: 12px;
+  }
+
+  .w-57-responsve {
+    width: 35px;
+  }
+
+  .w-60-responsve {
+    width: 60px;
+  }
+
+  .w-responsve-67 {
+    width: 67px;
+  }
+
+  .ml-9 {
+    margin-left: 9px;
+  }
+} 

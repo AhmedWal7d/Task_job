@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأثيث فندقي - SOFA Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+    
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/typography.css" />
+    <link rel="stylesheet" href="assets/css/inputs.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/Logo.png" alt="SOFA Experience" height="40">
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="#home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#services">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gallery">المعرض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#blog">المدونة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">اتصل بنا</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Right Side Actions -->
+                    <div class="navbar-actions d-flex align-items-center gap-3">
+                        <!-- Language Switcher -->
+                        <div class="dropdown">
+                            <button class="btn btn-link text-white dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-lang="ar">العربية</a></li>
+                                <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Profile -->
+                        <div class="profile-icon" data-bs-toggle="modal" data-bs-target="#profileModal">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        
+                        <!-- Help Button -->
+                        <button class="btn btn-outline-light btn-sm">طلب مساعدة</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-end" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">القائمة</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">المعرض</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">المدونة</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider owl-carousel">
+            <div class="hero-slide">
+                <img src="assets/images/homebenner.jpg" alt="تأثيث فندقي" class="hero-bg">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-title heading-h1 text-white mb-4">
+                                    تأثيث فندقي جاهز من<br>
+                                    الطلب حتى التسليم
+                                </h1>
+                                <p class="hero-subtitle body-1 text-white mb-5">
+                                    نقدّم لك حل تأثيث احترافي، مصمم مسبقًا بعناية وجاهز للتنفيذ السريع… كل ما تحتاجه في باكج واحد
+                                </p>
+                                <div class="hero-buttons d-flex flex-wrap justify-content-center gap-3">
+                                    <button class="btn btn-secondary btn-lg">استعرض الباكجات</button>
+                                    <button class="btn btn-primary btn-lg">اطلب الآن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Process Steps -->
+        <div class="process-steps">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="steps-container">
+                            <div class="step-item active">
+                                <div class="step-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <span class="step-text">البدء</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <span class="step-text">التصميم</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <span class="step-text">التنفيذ</span>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <span class="step-text">التسليم</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Platform Section -->
+    <section class="smart-platform-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/img-home.jpg" alt="منصة تأثيث ذكية" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-content">
+                        <h2 class="section-title heading-h2 mb-4">
+                            منصة تأثيث ذكية للوحدات الفندقية
+                        </h2>
+                        <p class="section-text body-1 mb-4">
+                            نقدم حلول تأثيث متكاملة ومصممة خصيصاً للوحدات الفندقية والشقق المفروشة، مع ضمان الجودة والسرعة في التنفيذ.
+                        </p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check text-primary"></i> تصميم احترافي مسبق</li>
+                            <li><i class="fas fa-check text-primary"></i> جودة عالية في المواد</li>
+                            <li><i class="fas fa-check text-primary"></i> تركيب سريع ومحترف</li>
+                            <li><i class="fas fa-check text-primary"></i> ضمان شامل</li>
+                        </ul>
+                        <button class="btn btn-primary btn-lg mt-4">اطلب الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2 mb-3">اختر الباكج المناسب لوحدتك</h2>
+                <p class="section-text body-1">نقدم مجموعة متنوعة من الباكجات المصممة خصيصاً لاحتياجاتك</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-lg-6">
+                    <div class="package-card">
+                        <img src="assets/images/img-home2.jpg" alt="باقة الشقق الفندقية" class="package-image">
+                        <div class="package-content">
+                            <h3 class="package-title">باقة الشقق الفندقية</h3>
+                            <div class="package-price">١٦,٠٠٠ ر.س</div>
+                            <ul class="package-features">
+                                <li>أثاث غرفة المعيشة كاملة</li>
+                                <li>مطبخ مجهز بالكامل</li>
+                                <li>غرفة نوم رئيسية</li>
+                                <li>إكسسوارات وتزيين</li>
+                            </ul>
+                            <div class="package-buttons">
+                                <button class="btn btn-outline-primary">التفاصيل</button>
+                                <button class="btn btn-primary">اطلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="col-lg-6">
+                    <div class="package-card">
+                        <img src="assets/images/img-home3.jpg" alt="باقة الفلل الفندقية" class="package-image">
+                        <div class="package-content">
+                            <h3 class="package-title">باقة الفلل الفندقية</h3>
+                            <div class="package-price">٣٥,٠٠٠ ر.س</div>
+                            <ul class="package-features">
+                                <li>أثاث فاخر شامل</li>
+                                <li>غرف نوم متعددة</li>
+                                <li>مطبخ احترافي</li>
+                                <li>حديقة خارجية</li>
+                            </ul>
+                            <div class="package-buttons">
+                                <button class="btn btn-outline-primary">التفاصيل</button>
+                                <button class="btn btn-primary">اطلب الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Steps Section -->
+    <section class="order-steps-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2">خطوات إتمام طلبك</h2>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="steps-timeline">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>اختيار الباكج</h4>
+                                <p>اختر الباكج المناسب لوحدتك</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>التخصيص</h4>
+                                <p>خصص الألوان والتصميم</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>الموافقة</h4>
+                                <p>اعتماد التصميم النهائي</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>التنفيذ</h4>
+                                <p>التوريد والتركيب</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>التسليم</h4>
+                                <p>تسليم الوحدة جاهزة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="order-form-card">
+                        <div class="form-header">
+                            <img src="assets/images/Profile_IconAcount.png" alt="Profile" class="profile-avatar">
+                            <h4>ابدأ طلبك الآن</h4>
+                        </div>
+                        <form class="order-form">
+                            <div class="form-group">
+                                <label class="form-label">نوع الوحدة</label>
+                                <select class="form-select">
+                                    <option>اختر نوع الوحدة</option>
+                                    <option>شقة فندقية</option>
+                                    <option>فيلا فندقية</option>
+                                    <option>غرفة فندقية</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">عدد الغرف</label>
+                                <input type="number" class="form-control" placeholder="أدخل عدد الغرف">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">الميزانية</label>
+                                <select class="form-select">
+                                    <option>اختر الميزانية</option>
+                                    <option>اقتصادي</option>
+                                    <option>متوسط</option>
+                                    <option>فاخر</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">ابدأ الطلب</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2 text-white">لماذا تختارنا؟</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-medal fa-2x"></i>
+                        </div>
+                        <h4>جودة عالية</h4>
+                        <p>نستخدم أفضل المواد وأحدث التقنيات</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fa-2x"></i>
+                        </div>
+                        <h4>سرعة في التنفيذ</h4>
+                        <p>نلتزم بمواعيد دقيقة للتنفيذ</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-shield-alt fa-2x"></i>
+                        </div>
+                        <h4>ضمان شامل</h4>
+                        <p>ضمان شامل على جميع المنتجات</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-users fa-2x"></i>
+                        </div>
+                        <h4>فريق محترف</h4>
+                        <p>فريق من الخبراء والمصممين</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-tools fa-2x"></i>
+                        </div>
+                        <h4>خدمة شاملة</h4>
+                        <p>من التصميم حتى التركيب</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
+                        <h4>رضا العملاء</h4>
+                        <p>نحرص على رضا عملائنا الكامل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="cta-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/img-home4.jpg" alt="تأثيث الوحدة" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-content">
+                            <h2 class="cta-title heading-h2 mb-4">جاهز لتأثيث وحدتك؟</h2>
+                            <p class="cta-text body-1 mb-4">
+                                ابدأ رحلتك معنا الآن واحصل على وحدة فندقية مميزة ومريحة
+                            </p>
+                            <button class="btn btn-primary btn-lg">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2">آراء عملائنا</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "خدمة ممتازة وجودة عالية. الفريق محترف جداً والنتيجة رائعة"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/profileimage.jpg" alt="أحمد محمد" class="author-avatar">
+                            <div class="author-info">
+                                <h5>أحمد محمد</h5>
+                                <span>مالك شقة فندقية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "التصميم جميل والتنفيذ سريع. أنصح بالتعامل معهم"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/profileimage.jpg" alt="سارة أحمد" class="author-avatar">
+                            <div class="author-info">
+                                <h5>سارة أحمد</h5>
+                                <span>مديرة فندق</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "أسعار معقولة وخدمة احترافية. سأتعامل معهم مرة أخرى"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/profileimage.jpg" alt="محمد علي" class="author-avatar">
+                            <div class="author-info">
+                                <h5>محمد علي</h5>
+                                <span>مستثمر عقاري</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2">شاهد أعمالنا</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home5.jpg" alt="غرفة معيشة" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home2.jpg" alt="غرفة نوم" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home3.jpg" alt="مطبخ" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home4.jpg" alt="حمام" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home5.jpg" alt="ممر" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="assets/images/img-home.jpg" alt="حديقة" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg">شاهد المزيد</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title heading-h2">الأسئلة الشائعة</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    كم تستغرق مدة التنفيذ؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    تتراوح مدة التنفيذ بين 2-4 أسابيع حسب حجم المشروع وتعقيده.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    هل تقدمون ضمان على المنتجات؟
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، نقدم ضمان شامل لمدة عامين على جميع المنتجات.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    هل يمكن تخصيص التصميم؟
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، يمكن تخصيص التصميم والألوان حسب رغبتك.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-primary text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <img src="assets/images/Logo.png" alt="SOFA Experience" height="40" class="mb-3">
+                        <p>نحن نقدم حلول تأثيث متكاملة للوحدات الفندقية والشقق المفروشة</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">خدماتنا</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">تأثيث الشقق</a></li>
+                        <li><a href="#">تأثيث الفلل</a></li>
+                        <li><a href="#">تأثيث الغرف</a></li>
+                        <li><a href="#">التصميم الداخلي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">الشركة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">فريق العمل</a></li>
+                        <li><a href="#">الأخبار</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">الدعم</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">المساعدة</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">الشكاوى</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">القانونية</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الاسترداد</a></li>
+                        <li><a href="#">سياسة الضمان</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 SOFA Experience. جميع الحقوق محفوظة</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">تصميم وتطوير بواسطة فريق SOFA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Owl Carousel JS -->
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/language-manager.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/optimizations.js"></script>
+
+    <script>
+        // Initialize language manager
+        const languageManager = new LanguageManager();
+        
+        // Initialize Owl Carousel
+        $(document).ready(function() {
+            $('.hero-slider').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: true,
+                navText: [
+                    '<i class="fas fa-chevron-left"></i>',
+                    '<i class="fas fa-chevron-right"></i>'
+                ]
+            });
+        });
+        
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollBtn');
+            if (window.pageYOffset > 300) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 

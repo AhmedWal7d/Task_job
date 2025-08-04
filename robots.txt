@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /assets/js/optimizations.js
+
+# Allow important files
+Allow: /assets/css/
+Allow: /assets/images/
+Allow: /assets/js/main.js
+
+# Sitemap location
+Sitemap: https://sofa-experience.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1 
