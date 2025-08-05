@@ -19,7 +19,10 @@
   font-size: 22px;
   font-weight: bold;
 }
-
+.testimonial-card{
+border: 1px solid #E7E7E7;
+width: 377.33331298828125px;
+}
 /* Features */
 .feature {
   border-radius: 30px;
@@ -75,12 +78,15 @@
 .testimonial-card {
   border-radius: var(--radius-xl);
   background: var(--surface-white);
-  padding: var(--spacing-xl);
+  padding: 5px;
   height: 208px;
   box-shadow: var(--shadow-sm);
   text-align: right;
 }
-
+.testimonial-card p{
+  color: #314660;
+  font-size: 16px;
+}
 .testimonial-card .stars {
   direction: ltr;
   color: #ffc107;
@@ -102,6 +108,8 @@
   position: relative;
   width: 292px;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .step-box1 {
@@ -111,6 +119,12 @@
   color: var(--surface-white);
   position: relative;
   width: 292px;
+height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Card Right */

@@ -52,6 +52,9 @@
   transition: background 0.3s ease;
   border: none;
 }
+body{
+  overflow-x: hidden;
+}
 
 .owl-dot.active {
   background: var(--primary);
@@ -110,12 +113,23 @@
   left: -20px;
   border-right: 22px solid var(--text-heading);
 }
-
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+ font-weight: 700;
+ font-size: 13px;
+ color: #08203E;
+}
+.order_Packages{
+  width: 192px !important;
+  height: 44px !important;
+}
 .right-arrow {
   right: -20px;
   border-left: 22px solid var(--surface-white);
 }
-
+.bg_pop_bootstrap{
+  background-color: #EEF1F5;
+  
+}
 .arrow-1 {
   border-left: 22px solid var(--primary) !important;
 }
@@ -149,6 +163,43 @@
   width: 359px;
   height: 72px;
 }
+
+
+
+.timeline .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 8px 0;
+}
+
+.timeline .line {
+  width: 2px;
+  height: 40px;
+  background-color: #dcdcdc;
+}
+
+/* ألوان مختلفة حسب الترتيب */
+.dot-dark {
+  background-color: #08203E;
+}
+
+.dot-gold {
+  background-color: #AD996F;
+}
+
+.dot-gray {
+  background-color: #979DAC;
+}
+
+.dot-green {
+  background-color: #32B828;
+}
+
+.dot-yellow {
+  background-color: #C1B41C;
+}
+
 
 .w-steplong {
   width: 394px;
@@ -190,7 +241,23 @@ a {
 .overflow-hidden {
   overflow: visible !important;
 }
-
+.owl-carousel .owl-item img{
+  width: 32px;
+  height: 32px;
+}
+.testimonial-card{
+  font-size: 16px !important;
+}
+.imgprofile{
+  width: 48px !important;
+  height: 48px !important;
+}
+.bg-section-imag{
+  background-color: #EEF1F5;
+}
+.responsev_paddimg{
+padding-top: 60px !important;
+}
 /* ===== RESPONSIVE ADJUSTMENTS ===== */
 
 @media (max-width: 768px) {
@@ -207,7 +274,22 @@ a {
     top: 500px !important;
     width: 219px !important;
   }
+.responsev_paddimg {
+    padding-top: 6px !important;
+}
+  .btn-whatsapp {
+  
+    color: white !important;
+    padding: 9px !important;
+    font-size: 12px;
+}
+  .btn-whatsapp img{
+      /* padding: 9px !important; */
+    width: 24px;
+    height: 24px;
 
+    color: white;
+}
   .icone_slider {
     width: 44px !important;
     height: 44px !important;
@@ -254,6 +336,10 @@ a {
     font-weight: 500;
     margin-bottom: 10px;
   }
+  .order_Packages{
+  width: 100% !important;
+  height: 44px !important;
+}
 
   .btn-help {
     background-color: var(--primary);
@@ -302,6 +388,10 @@ a {
 
   .responsev_margin {
     margin-top: 130px;
+  }
+  .responsev_sheck{
+
+    width: 46% !important;
   }
 } 
 

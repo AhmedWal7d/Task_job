@@ -140,11 +140,15 @@
 
 /* Input Hover */
 .input_hover_pop {
-  border: 1px solid var(--secondary);
-}
+ background-color: #F6F6F7;
 
-.input_hover_pop:hover {
-  background-color: var(--secondary) !important;
+}
+.top18{
+top: 9px;
+    right: 26px !important;
+}
+.h_44{
+  height: 44px;
 }
 
 .text_color_input {
@@ -160,6 +164,9 @@
 .pb-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+.w-85 {
+    width: 93% !important;
 }
 
 /* Responsive Forms */

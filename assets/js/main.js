@@ -14,7 +14,7 @@ function initializeCarousel() {
     $(".owl-carousel").owlCarousel({
         rtl: true,
         loop: true,
-        margin: 10,
+        margin: 30,
         dots: true,
         autoplay: true,
         autoplayTimeout: 4000,

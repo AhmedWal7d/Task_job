@@ -128,12 +128,16 @@
   border: none;
   padding: var(--spacing-xs) var(--spacing-lg);
   transition: all var(--transition-normal);
+
+    font-size: 12px;
 }
+
 
 .btn-whatsapp:hover {
   background-color: var(--primary-hover);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+  color: white;
 }
 
 /* Arrow Button */
@@ -301,7 +305,11 @@
 }
 
 /* ===== RESPONSIVE BUTTONS ===== */
-
+.btn-order{
+      display: flex
+;
+    font-size: 12px;
+}
 @media (max-width: 768px) {
   /* Mobile Primary & Outline Buttons */
   .btn-custom-primary,
@@ -344,6 +352,7 @@
     height: 36px;
     font-size: 12px;
   }
+
 }
 
 @media (max-width: 480px) {

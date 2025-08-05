@@ -35,7 +35,7 @@
 
 <body>
   <!-- ===== SCROLL TO TOP BUTTON ===== -->
-  <button class="scroll-to-top" id="scrollBtn" onclick="scrollToTop()">⬆ </button>
+  <!-- <button class="scroll-to-top" id="scrollBtn" onclick="scrollToTop()">⬆ </button> -->
 
   <!-- ===== NAVIGATION SECTION ===== -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
@@ -185,9 +185,9 @@
         <div class="carousel-caption">
           <h2 class="h2responsve" data-translate="hero.title">Title</h2>
           <p data-translate="hero.subtitle">Subtitle</p>
-          <div class="d-flex flex-wrap justify-content-center gap-sm-5">
-            <button class="btn btn-custom-outline" data-translate="hero.browsePackages">Browse Packages</button>
-            <button class="btn btn-custom-secondary" data-translate="hero.orderNow">Order Now</button>
+          <div class="d-flex  justify-content-center gap-sm-5">
+            <button class="btn btn-custom-outline order_Packages mt-4" data-translate="hero.browsePackages">Browse Packages</button>
+            <button class="btn btn-custom-secondary mt-4 order_Packages" data-translate="hero.orderNow">Order Now</button>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
           <p data-translate="hero.subtitle">Subtitle</p>
           <div class="d-flex flex-wrap justify-content-center gap-sm-5">
             <button class="btn btn-custom-outline" data-translate="hero.browsePackages">Browse Packages</button>
-            <button class="btn btn-custom-secondary" data-translate="hero.orderNow">Order Now</button>
+            <button class="btn btn-custom-secondary w-100 mt-5" data-translate="hero.orderNow">Order Now</button>
           </div>
         </div>
       </div>
@@ -230,33 +230,33 @@
     <div class="row row-cols-2 row-cols-md-5 g-4 text-center pt-2">
       <div class="col step-box1 w-200">
         <div class="line-between1"></div>
-        <div class="step-circle"><img src="assets/images/icons/icone1.png" alt="" /></div>
+        <div class="step-circle"><img src="assets/images/hero/logo2.png" alt="" /></div>
         <p class="step-title text-dark pt-2" data-translate="steps.step1.title">اختيار الوحدة</p>
         <div class="step-desc" data-translate="steps.step1.description">استوديو أو غرف</div>
       </div>
       <div class="col step-box1 w-200">
         <div class="line-between"></div>
-        <div class="step-circle"><img src="assets/images/icons/icone2.png" alt="" /></div>
+        <div class="step-circle"><img src="assets/images/hero/Frame 42 (1).png" alt="" /></div>
         <p class="step-title text-dark pt-2" data-translate="steps.step2.title">تخصيص الألوان</p>
         <div class="step-desc" data-translate="steps.step2.description">نمط وتأثيث</div>
       </div>
       <div class="col step-box1 w-200">
         <div class="line-between"></div>
         <div class="step-circle">
-          <img src="assets/images/icons/checkmark-circle.png" alt="" />
+          <img src="assets/images/hero/icone3.png" alt="" />
         </div>
         <p class="step-title text-dark pt-2" data-translate="steps.step3.title">اعتماد الباكج</p>
         <div class="step-desc" data-translate="steps.step3.description">مخطط تجهيز</div>
       </div>
       <div class="col step-box1 w-200">
         <div class="line-between"></div>
-        <div class="step-circle"><img src="assets/images/ui/Group.png" alt="" /></div>
+        <div class="step-circle"><img src="assets/images/hero/logo6.png" alt="" /></div>
         <p class="step-title text-dark pt-2" data-translate="steps.step4.title">التوريد والتركيب</p>
         <div class="step-desc" data-translate="steps.step4.description">شحن وتجهيز</div>
       </div>
       <div class="col step-box1 w-200">
         <div class="line-between"></div>
-        <div class="step-circle"><img src="assets/images/icons/icone4.png" alt="" /></div>
+        <div class="step-circle"><img src="assets/images/hero/loho7.png" alt="" /></div>
         <p class="step-title text-dark pt-2" data-translate="steps.step5.title">التسليم</p>
         <div class="step-desc" data-translate="steps.step5.description">جاهزة للسكن</div>
       </div>
@@ -272,74 +272,77 @@
         <div class="step-circle">
           <img src="assets/images/icons/icone1.png" alt="" />
         </div>
-        <p class=" text-dark font-14 p-0 m-0 pt-3">اختيار الوحدة</p>
-        <p class="step-descr text-dark m-0 p-0 font-13">استوديو أو غرف</p>
+        <p class=" text-dark font-13 p-0 m-0 pt-3">اختيار الوحدة</p>
+        <p class="step-descr text-dark m-0 p-0 font-11">استوديو أو غرف</p>
       </div>
 
       <div class="step-item text-center">
         <div class="step-circle">
           <img src="assets/images/icons/icone2.png" alt="" />
         </div>
-        <p class="text-dark font-14 p-0 m-0 pt-3">تخصيص الألوان</p>
+        <p class="text-dark font-11 p-0 m-0 pt-3">تخصيص الألوان</p>
         <p class="step-descr text-dark m-0 p-0 font-13">نمط وتأثيث</p>
       </div>
       <div class="step-item text-center">
         <div class="step-circle">
           <img src="assets/images/icons/checkmark-circle.png" alt="" />
         </div>
-        <p class="text-dark font-14 p-0 m-0 pt-3"> اعتماد الباكج</p>
+        <p class="text-dark font-13 p-0 m-0 pt-3"> اعتماد الباكج</p>
         <p class="step-descr text-dark m-0 p-0 font-13">مخطط نهائي </p>
       </div>
     </div>
   </section>
 
   <!-- ===== ABOUT US SECTION ===== -->
-  <section>
-    <div class="container py-5 mt-4">
-      <div class="row align-items-center ">
-        <div class="col-md-6 col-sm-12 order-1 order-md-2 position-relative">
-          <!-- الصورة الخلفية -->
-          <img src="assets/images/ui/Vector.png" alt="خلفية زخرفية"
-            class="position-absolute d-none d-md-block bg-image_transportns" />
+<section>
+  <div class="container  mt-4">
+    <div class="row align-items-center">
+      
+      <!-- صورة الأثاث -->
+      <div class="col-md-6 col-sm-12 order-1 order-md-2 position-relative">
+        <!-- زخرفة خلفية -->
+        <img src="assets/images/ui/Vector.png" alt="خلفية زخرفية"
+          class="position-absolute d-none d-lg-block bg-image_transportns" />
 
-          <!-- الصورة الأساسية -->
-          <div class="imagehome mx-auto position-relative" style="z-index: 1;">
-            <img src="assets/images/hero/imagehome.png" alt="صورة أثاث" class="card-img rounded-card" />
-          </div>
+        <!-- الصورة الأساسية -->
+        <div class="imagehome mx-auto position-relative" style="z-index: 1;">
+          <img src="assets/images/hero/imagehome.png" alt="صورة أثاث" class="card-img rounded-card" />
+        </div>
+      </div>
+
+      <!-- النصوص والمحتوى -->
+      <div class="col-md-6 col-sm-12 order-2 order-md-1 responsev_margin mt-0 pt-0">
+        <p class="text-color font-14-500 bg-transparent pt-2 title_section responsev_top">من نحن</p>
+        <h4 class="fw-bold mt-1 ">منصة تأثيث ذكية للوحدات الفندقية</h4>
+        <p class="text-muted font-15 ">
+          نقدم اختيارات متنوعة متكاملة لتأثيث وحدتك الفندقية بالكامل بأعلى
+          التصميمات الجذابة ومحددة مسبقًا لتسهيل إنشاء الحلول الجاهزة لأوامر
+          الشراء الكامل من خلال منصة موحدة وسلسة.
+        </p>
+
+        <div class="icon-text d-flex align-items-center">
+          <img src="assets/images/icons/iconeclock.png" alt="توفير الوقت" />
+          <span class="mx-2">توفير الوقت</span>
         </div>
 
-
-
-        <div class="col-md-6 col-sm-12 order-2 order-md-1 responsev_margin">
-          <p class=" text-color font-14-500 bg-transparent pt-2 title_section">من نحن</p>
-          <h4 class="fw-bold mt-1">منصة تأثيث ذكية للوحدات الفندقية</h4>
-          <p class="text-muted font-15">
-            نقدم اختيارات متنوعة متكاملة لتأثيث وحدتك الفندقية بالكامل بأعلى
-            التصميمات الجذابة ومحددة مسبقًا لتسهيل إنشاء الحلول الجاهزة لأوامر
-            الشراء الكامل من خلال منصة موحدة وسلسة.
-          </p>
-
-          <div class="icon-text">
-            <img src="assets/images/icons/iconeclock.png" alt="" />
-            <span class="mx-2">توفير الوقت</span>
-          </div>
-          <div class="icon-text mt-3">
-            <img src="assets/images/icons/shield-check.png" alt="" />
-            <span class="mx-2">توفير عالي للتكلفة</span>
-          </div>
-          <div class="icon-text mt-3">
-            <img src="assets/images/icons/icone5.png" alt="" />
-            <span>جاهزية كاملة للتسليم</span>
-          </div>
-
-          <button class="btn w-100 text-white mt-5 bg-btn">
-            تعرف على طريقتنا العمل
-          </button>
+        <div class="icon-text d-flex align-items-center mt-3">
+          <img src="assets/images/icons/shield-check.png" alt="توفير التكلفة" />
+          <span class="mx-2">توفير عالي للتكلفة</span>
         </div>
 
+        <div class="icon-text d-flex align-items-center mt-3">
+          <img src="assets/images/icons/icone5.png" alt="جاهزية" />
+          <span class="mx-2">جاهزية كاملة للتسليم</span>
+        </div>
+
+        <button class="btn w-100 text-white mt-5 bg-btn">
+          تعرف على طريقتنا العمل
+        </button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- ===== PACKAGE SELECTION FORM SECTION ===== -->
   <section>
@@ -355,24 +358,28 @@
       <form class="form-section">
         <!-- Unit Type Selection -->
         <label class="form-label">نوع الوحدة</label>
-        <div class="mb-4 d-between">
-          <div class="form-check form-check-reverse mt-2 w-43">
-            <input class="form-check-input" type="radio" name="unit" id="studio" />
-            <label class="form-check-label" for="studio">الاستوديو</label>
-          </div>
-          <div class="form-check form-check-reverse mt-2">
-            <label class="form-check-label" for="one-room">غرفة نوم واحدة</label>
-            <input class="form-check-input" type="radio" name="unit" id="one-room" />
-          </div>
-          <div class="form-check form-check-reverse w-43 mt-2 ">
-            <label class="form-check-label" for="two-rooms">غرفتان</label>
-            <input class="form-check-input" type="radio" name="unit" id="two-rooms" />
-          </div>
-          <div class="form-check form-check-reverse mt-2">
-            <label class="form-check-label" for="unknown">لست أعرف</label>
-            <input class="form-check-input" type="radio" name="unit" id="unknown" />
-          </div>
-        </div>
+  <div class="mb-4 d-flex flex-wrap gap-3 justify-content-between">
+  <div class="form-check form-check-reverse responsev_sheck mt-2" style="width: 18%;">
+    <input class="form-check-input" type="radio" name="unit" id="studio" />
+    <label class="form-check-label" for="studio">الاستوديو</label>
+  </div>
+
+  <div class="form-check form-check-reverse mt-2 responsev_sheck" style="width: 31%;">
+    <input class="form-check-input" type="radio" name="unit" id="one-room" />
+    <label class="form-check-label" for="one-room">غرفة نوم واحدة</label>
+  </div>
+
+  <div class="form-check form-check-reverse mt-2 responsev_sheck" style="width: 16%;">
+    <input class="form-check-input" type="radio" name="unit" id="two-rooms" />
+    <label class="form-check-label" for="two-rooms">غرفتان</label>
+  </div>
+
+  <div class="form-check form-check-reverse mt-2 responsev_sheck" style="width: 22%;">
+    <input class="form-check-input" type="radio" name="unit" id="unknown" />
+    <label class="form-check-label font-15" for="unknown">لست أعرف</label>
+  </div>
+</div>
+
 
         <!-- Previous Finish Pattern -->
         <label class="form-label">نمط التشطيب السابق في المشروع</label>
@@ -389,7 +396,7 @@
 
         <!-- Interior Design Need -->
         <label class="form-label">هل تحتاج لتصميم داخلي جاهز؟</label>
-        <div class="mb-4 d-flex   d-between w-responseve-50">
+        <div class="mb-4 d-flex   d-between w-responseve-90">
           <div class="form-check form-check-reverse">
             <input class="form-check-input" type="radio" name="design" id="need-help" />
             <label class="form-check-label" for="need-help">نعم، أحتاج مساعدة</label>
@@ -402,7 +409,7 @@
 
         <!-- Color Selection Help -->
         <label class="form-label">هل تحتاج مساعدة في اختيار الألوان؟</label>
-        <div class="mb-4 d-between  w-responseve-50">
+        <div class="mb-4 d-between  w-responseve-20">
           <div class="form-check form-check-reverse">
             <input class="form-check-input" type="radio" name="electric" id="electric-yes" />
             <label class="form-check-label" for="electric-yes">نعم</label>
@@ -421,7 +428,7 @@
 
   <!-- ===== PACKAGE TITLE SECTION ===== -->
   <section>
-    <div class="mt-5">
+    <div>
       <h1 class="form-title">اختر الباكج المناسب لوحدتك</h1>
       <p class="form-subtitle text-muted">
         باكجات فندقية مؤثثة بالكامل، جاهزة للتنفيذ خلال 90 يومًا، بخيارات
@@ -433,7 +440,7 @@
 
   <!-- ===== PACKAGES GRID SECTION ===== -->
   <section>
-    <div class="container my-4">
+    <div class="container ">
       <div class="row">
         <div class="col-lg-6 col-md-12 mt-3">
           <div class="package-card">
@@ -457,7 +464,7 @@
               <!-- Price -->
               <div class="d-flex align-items-center mb-3">
                 <p class="text-muted mb-0">ابتداءً من</p>
-                <h4 class="price mx-2">12,05500 ﷼</h4>
+                <h4 class="price mx-2">12,05500 <img src="/assets/images/hero/Platform Subtitle.png" alt=""> </h4>
               </div>
 
               <div class="mb-3 d-flex">
@@ -547,7 +554,7 @@
               <!-- Price -->
               <div class="d-flex align-items-center mb-3">
                 <p class="text-muted mb-0">ابتداءً من</p>
-                <h4 class="price mx-2">12,000 ﷼</h4>
+                <h4 class="price mx-2">12,000   <img src="/assets/images/hero/Platform Subtitle.png" alt="">   </h4>
               </div>
 
               <div class="mb-3 d-flex">
@@ -637,7 +644,7 @@
               <!-- Price -->
               <div class="d-flex align-items-center mb-3">
                 <p class="text-muted mb-0">ابتداءً من</p>
-                <h4 class="price mx-2">12,000 ﷼</h4>
+                <h4 class="price mx-2">12,000 <img src="/assets/images/hero/Platform Subtitle.png" alt=""></h4>
               </div>
 
               <div class="mb-3 d-flex">
@@ -725,7 +732,7 @@
               <!-- Price -->
               <div class="d-flex align-items-center mb-3">
                 <p class="text-muted mb-0">ابتداءً من</p>
-                <h4 class="price mx-2">12,000 ﷼</h4>
+                <h4 class="price mx-2">12,000 <img src="/assets/images/hero/Platform Subtitle.png" alt=""></h4>
               </div>
 
               <div class="mb-3 d-flex">
@@ -800,7 +807,7 @@
 
   <!-- ===== PROCESS STEPS SECTION ===== -->
   <section>
-    <div class="container py-5 mt-">
+    <div class="container  mt-">
       <div class="row align-items-start">
         <div class="col-md-5 mt-md-0">
           <div class="card-right d-center flex-column">
@@ -844,7 +851,7 @@
           </p>
 
           <div class="step">
-            <div class="step-icon"><img src="assets/images/icons/_icons.png" /></div>
+            <div class="step-icon"><img src="assets/images/hero/Platform Text Container.png" /></div>
             <div class="mt-2 pt-1">
               <h2 class="title-description ">اختر الباكدج واللون</h2>
               <p class="text-muted title-cart-pragraf">
@@ -854,7 +861,7 @@
             </div>
           </div>
           <div class="step">
-            <div class="step-icon"><img src="assets/images/icons/icone6.png" /></div>
+            <div class="step-icon"><img src="assets/images/hero/icone9.png" /></div>
             <div class="mt-2 pt-1">
               <h2 class="title-description">املأ النموذج الذكي</h2>
               <p class="text-muted title-cart-pragraf">
@@ -863,7 +870,7 @@
             </div>
           </div>
           <div class="step">
-            <div class="step-icon"><img src="assets/images/icons/price.png" /></div>
+            <div class="step-icon"><img src="assets/images/hero/icone10.png" /></div>
             <div class="mt-2 pt-1">
               <h2 class="title-description">استلم عرض السعر والموافقة</h2>
               <p class="text-muted title-cart-pragraf">
@@ -873,7 +880,7 @@
           </div>
           <div class="step">
             <div class="step-icon2">
-              <img src="assets/images/icons/delivery-truck.png" />
+              <img src="assets/images/hero/icone11.png" />
             </div>
             <div class="mt-2 pt-1">
               <h2 class="title-description">استلم وحدتك مؤثثة</h2>
@@ -893,7 +900,7 @@
 
   <!-- ===== WHY CHOOSE US SECTION ===== -->
   <section>
-    <div class="bg_about_us mt-3">
+    <div class="bg_about_us ">
       <div class="container">
         <div class="pt-5 pb-4">
           <h2 class="fw-bold font-24">لماذا نحن؟</h2>
@@ -985,7 +992,7 @@
   </section>
 
   <!-- ===== ORDER TRACKING TIMELINE SECTION ===== -->
-  <div class="container py-5 position-relative">
+  <div class="container  position-relative">
     <img src="assets/images/ui/Vector (1).png" alt="خلفية زخرفية"
       class="position-absolute d-none d-md-block vector-center-image" />
 
@@ -1022,19 +1029,20 @@
           <div class="mx-2 font-13 pt-1">يتم تركيب الأثاث بالكامل وتسليمه للوحدة</div>
         </div>
       </div>
-      <div class="col-2 d-flex flex-column align-items-center">
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-        <div class="dot"></div>
-      </div>
+  <div class="col-2 d-flex flex-column align-items-center timeline">
+  <div class="dot dot-dark"></div>
+  <div class="line"></div>
+  <div class="dot dot-gold"></div>
+  <div class="line"></div>
+  <div class="dot dot-gray"></div>
+  <div class="line"></div>
+  <div class="dot dot-dark"></div>
+  <div class="line"></div>
+  <div class="dot dot-green"></div>
+  <div class="line"></div>
+  <div class="dot dot-yellow"></div>
+</div>
+
       <div class="col-5 ">
         <div class="float_left_responsve">
           <div class="step-box d-start order1  cart_responsve_1 ">
@@ -1066,8 +1074,8 @@
   <section>
     <div class="container">
       <div class="bg-gray rounded-4">
-        <div class="row pt-5 pb-5  flex-column-reverse responsveimagehome flex-lg-row">
-          <div class="col-lg-7 col-md-12 text-white">
+        <div class="row  pb-5  flex-column-reverse responsveimagehome flex-lg-row">
+          <div class="col-lg-7 col-md-12 text-white responsev_paddimg">
             <div class="mx-5">
               <h4>جاهز لتأثيث وحدتك؟</h4>
               <p class="font-14 mt-4 text-descrption">
@@ -1079,12 +1087,12 @@
                   تحدث معنا عبر واتساب
                   <img class="mx-2" src="assets/images/icons/whatsapp.png" alt="" />
                 </button>
-                <button class="btn border-btn d-flex mx-4 responsve-btn font-13 "> اطلب الان <img
+                <button class="btn border-btn d-flex mx-4 responsve-btn font-13 btn-order"> اطلب الان <img
                     src="assets/images/arrow.png" alt=""> </button>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-md-12 ">
+          <div class="col-lg-5 col-md-12  responsev_paddimg">
             <div class="imagehomelast ">
               <img src="assets/images/gallery/imagehomelast.jpg" class="w-100" alt="">
             </div>
@@ -1105,8 +1113,8 @@
       </p>
 
       <div class="owl-carousel owl-theme">
-        <div class="mt-3">
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+        <div class="mt-3 ">
+          <div class="testimonial-card mb-1 d-none d-lg-block  ">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1123,15 +1131,15 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
-            <p class="font-13 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
+            <p class="font-16 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1141,7 +1149,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 ">
           <div class="testimonial-card mb-1  display_none_responsve_mobale">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
@@ -1150,7 +1158,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1159,7 +1167,7 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1167,7 +1175,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1177,7 +1185,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 ">
           <div class="testimonial-card mb-1 d-none d-lg-block">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
@@ -1186,7 +1194,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1195,7 +1203,7 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1203,7 +1211,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1213,7 +1221,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 ">
           <div class="testimonial-card mb-1  display_none_responsve_mobale">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
@@ -1222,7 +1230,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1231,7 +1239,7 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1239,43 +1247,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
-                  <h6 class="mb-0 font-14">سالم الحربي</h6>
-                  <small class="text-muted font-13">الدمام</small>
-                </div>
-
-              </div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-3">
-          <div class="testimonial-card mb-1  display_none_responsve_mobale">
-            <div class="text-start">
-              <img src="assets/images/icons/quotation.png" class="w-5">
-            </div>
-            <p class="font-13 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
-            <div class="d-flex w-100 justify-content-between pt-3 mt-3">
-              <div class="text-end me-3  d-flex">
-                <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
-                  <h6 class="mb-0 font-14">سالم الحربي</h6>
-                  <small class="text-muted font-13">الدمام</small>
-                </div>
-
-              </div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
-            <div class="text-start">
-              <img src="assets/images/icons/quotation.png" class="w-5">
-            </div>
-            <p class="font-13 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
-            <div class="d-flex w-100 justify-content-between pt-3 mt-3">
-              <div class="text-end me-3  d-flex">
-                <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1285,7 +1257,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 ">
           <div class="testimonial-card mb-1  display_none_responsve_mobale">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
@@ -1294,7 +1266,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1303,7 +1275,7 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-2">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1311,7 +1283,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1321,7 +1293,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 ">
           <div class="testimonial-card mb-1  display_none_responsve_mobale">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
@@ -1330,7 +1302,7 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1339,7 +1311,7 @@
               <div class="stars">★★★★★</div>
             </div>
           </div>
-          <div class="testimonial-card mb-1 d-none d-lg-block">
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
             <div class="text-start">
               <img src="assets/images/icons/quotation.png" class="w-5">
             </div>
@@ -1347,7 +1319,43 @@
             <div class="d-flex w-100 justify-content-between pt-3 mt-3">
               <div class="text-end me-3  d-flex">
                 <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
-                <div class="mx-3">
+                <div class="mx-3 text-start">
+                  <h6 class="mb-0 font-14">سالم الحربي</h6>
+                  <small class="text-muted font-13">الدمام</small>
+                </div>
+
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 ">
+          <div class="testimonial-card mb-1  display_none_responsve_mobale">
+            <div class="text-start">
+              <img src="assets/images/icons/quotation.png" class="w-5">
+            </div>
+            <p class="font-13 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
+            <div class="d-flex w-100 justify-content-between pt-3 mt-3">
+              <div class="text-end me-3  d-flex">
+                <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
+                <div class="mx-3 text-start">
+                  <h6 class="mb-0 font-14">سالم الحربي</h6>
+                  <small class="text-muted font-13">الدمام</small>
+                </div>
+
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial-card mb-1 d-none d-lg-block mt-3">
+            <div class="text-start">
+              <img src="assets/images/icons/quotation.png" class="w-5">
+            </div>
+            <p class="font-13 ">وصل الطلب في الموعد، خدمة رائعة كما هو موضح في الموقع. شكراً لكم!</p>
+            <div class="d-flex w-100 justify-content-between pt-3 mt-3">
+              <div class="text-end me-3  d-flex">
+                <img src="assets/images/gallery/fd3d4c48a8b689cbbfb343fe22651fcb4dc1c2e0.jpg" class="imgprofile" alt="">
+                <div class="mx-3 text-start">
                   <h6 class="mb-0 font-14">سالم الحربي</h6>
                   <small class="text-muted font-13">الدمام</small>
                 </div>
@@ -1363,9 +1371,9 @@
   </section>
 
   <!-- ===== GALLERY SECTION ===== -->
-  <section class="bg-galarry">
+  <section class="bg-galarry bg-section-imag mt-4">
 
-    <div class="text-center mt-5 ">
+    <div class="text-center mt-3 ">
 
       <h3 class="fw-bold pt-5 text-dark fw-bold"> شاهد نماذج تأثيثنا </h3>
       <p class="pt-3 p-0 m-0 text-descrption text_dircation">نقدّم لك لمحة بصرية عن مستوى التأثيث، التفاصيل، والتشطيب في
@@ -1432,6 +1440,11 @@
         </div>
 
 
+      </div>
+      <div class="text-center mt-5">
+              <button class="btn btn-whatsapp ml-9 px-0">
+                 شاهد المعرض كاملا
+                </button>
       </div>
     </div>
 
@@ -1551,7 +1564,7 @@
         </div>
 
         <!-- العمود الأول: تابعنا -->
-        <div class="col-md-3 mb-4 text-end">
+        <div class="col-md-3 mb-4 text-start">
           <h6>تابعنا</h6>
           <div class="social-icons d-flex justify-content-center justify-content-md-start display-responsve-start mt-2">
             <a href="#"><img src="assets/images/social/Snapchat Icon.png" alt="Snapchat"></a>
@@ -1618,7 +1631,7 @@
                 <div class="input-group ">
                   <!-- Dropdown for countries -->
                   <button
-                    class="btn btn-outline-secondary input_hover_pop mx-2 dropdown-toggle d-flex align-items-center"
+                    class="btn  input_hover_pop mx-2 dropdown-toggle d-flex align-items-center"
                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="fi fi-sa" id="selected-flag"></span>
                     &nbsp;<span id="selected-code">+966</span>
@@ -1627,9 +1640,9 @@
 
 
                     <li>
-                      <input type="email" class="form-control pe-5 w-85 mx-auto" placeholder="  ابحث هنا">
+                      <input type="email" class="form-control pe-5 w-85 mx-auto input_hover_pop h_44" placeholder="  ابحث هنا">
                       <div
-                        class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
+                        class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted top18">
                         <img class="image_email_pup1" src="assets/images/icons/search-normal.png" alt="">
                       </div>
                     </li>
@@ -1657,7 +1670,7 @@
                   </ul>
 
 
-                  <input type="text" class="form-control text-end" placeholder="مثال 5xxxxxxx">
+                  <input type="text" class="form-control text-start input_hover_pop" placeholder="مثال 5xxxxxxx">
                 </div>
               </div>
               <!-- زر الاستمرار -->
@@ -1669,8 +1682,8 @@
               <div class="modal-body text-end">
                 <form>
                   <!-- الاسم الكامل -->
-                  <div class="mb-3 position-relative">
-                    <label class="form-label text_color_input">الاسم الكامل</label>
+                  <div class="mb-4 position-relative">
+                    <label class="form-label text_color_input text-start">الاسم الكامل</label>
                     <input type="text" class="form-control pe-5" placeholder="ادخل الاسم">
                     <div
                       class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-3 pt-4 mt-2 text-muted">
@@ -1679,8 +1692,8 @@
                   </div>
 
                   <!-- رقم الهاتف -->
-                  <div class="mb-3 position-relative ">
-                    <label class="form-label text_color_input">رقم الهاتف</label>
+                  <div class="mb-4 position-relative ">
+                    <label class="form-label text_color_input text-start">رقم الهاتف</label>
                     <div class="input-group ">
                       <!-- Dropdown for countries -->
                       <button
@@ -1692,13 +1705,13 @@
                       <ul class="dropdown-menu pup_input_city">
 
 
-                        <li>
-                          <input type="email" class="form-control pe-5 w-85 mx-auto" placeholder="  ابحث هنا">
-                          <div
-                            class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
-                            <img class="image_email_pup1" src="assets/images/icons/search-normal.png" alt="">
-                          </div>
-                        </li>
+                      <li>
+                      <input type="email" class="form-control pe-5 w-85 mx-auto input_hover_pop h_44" placeholder="  ابحث هنا">
+                      <div
+                        class="bi bi-person position-absolute top-5 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted top18">
+                        <img class="image_email_pup1" src="assets/images/icons/search-normal.png" alt="">
+                      </div>
+                    </li>
                         <li>
                           <a class="dropdown-item pb-0 d-flex justify-content-between align-items-center" href="#"
                             data-flag="eg" data-code="+20">
@@ -1723,14 +1736,14 @@
                       </ul>
 
 
-                      <input type="text" class="form-control text-end" placeholder="مثال 5xxxxxxx">
+                      <input type="text" class="form-control text-start" placeholder="مثال 5xxxxxxx">
                     </div>
                   </div>
 
 
                   <!-- البريد الإلكتروني -->
-                  <div class="mb-3 position-relative">
-                    <label class="form-label text_color_input">البريد الإلكتروني (اختياري)</label>
+                  <div class="mb-4 position-relative">
+                    <label class="form-label text_color_input text-start">البريد الإلكتروني (اختياري)</label>
                     <input type="email" class="form-control pe-5" placeholder="ادخل البريد الإلكتروني">
                     <div
                       class="bi bi-person position-absolute top-50 end-0 translate-middle-y me-2 pt-4 mt-2 text-muted">
